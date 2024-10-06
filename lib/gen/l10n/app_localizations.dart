@@ -100,7 +100,7 @@ abstract class AppLocalizations {
   /// A hello world message
   ///
   /// In en, this message translates to:
-  /// **'Hello, World!'**
+  /// **'Hello, World! English'**
   String get helloWorld;
 }
 

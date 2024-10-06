@@ -7,5 +7,5 @@ class AppLocalizationsHi extends AppLocalizations {
   AppLocalizationsHi([String locale = 'hi']) : super(locale);
 
   @override
-  String get helloWorld => 'Hello, World!';
+  String get helloWorld => 'Hello, World! Hindi';
 }

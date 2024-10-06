@@ -26,7 +26,7 @@ class MyRoutes {
 final routerConfig = GoRouter(
   navigatorKey: _rootNavigatorKey,
   debugLogDiagnostics: kDebugMode,
-  initialLocation: MyRoutes.onboarding,
+  initialLocation: MyRoutes.home,
   routes: [
     GoRoute(
       parentNavigatorKey: _rootNavigatorKey,

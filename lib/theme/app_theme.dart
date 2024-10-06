@@ -8,9 +8,6 @@ ThemeData lightTheme(BuildContext context) {
     useMaterial3: true,
   ).copyWith(
     textTheme: GoogleFonts.notoSerifTextTheme(baseTheme.textTheme),
-    appBarTheme: AppBarTheme(
-      foregroundColor: Theme.of(context).colorScheme.primary,
-    ),
   );
 }
 
@@ -21,8 +18,5 @@ ThemeData darkTheme(BuildContext context) {
     useMaterial3: true,
   ).copyWith(
     textTheme: GoogleFonts.notoSerifTextTheme(baseTheme.textTheme),
-    appBarTheme: AppBarTheme(
-      foregroundColor: Theme.of(context).colorScheme.primary,
-    ),
   );
 }

@@ -1,6 +1,7 @@
 import 'package:basic_template/common/dimensions.dart';
 import 'package:basic_template/routes/routers.dart';
 import 'package:basic_template/views/components/body_widget.dart';
+import 'package:basic_template/views/components/header.dart';
 import 'package:basic_template/views/components/icon_widgets.dart';
 import 'package:basic_template/views/components/text_widgets.dart';
 import 'package:flutter/material.dart';
@@ -12,10 +13,7 @@ class MySettingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Setting'),
-        centerTitle: false,
-      ),
+      appBar: headerNav(context, title: 'Setting'),
       body: BodyWidget(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

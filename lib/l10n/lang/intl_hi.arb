@@ -1,6 +1,6 @@
 {
     "@@locale": "hi",
-    "helloWorld": "Hello, World!",
+    "helloWorld": "Hello, World! Hindi",
     "@helloWorld": {
         "type": "text",
         "description": "A hello world message"

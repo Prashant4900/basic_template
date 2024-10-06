@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:basic_template/services/app_logger.dart';
+import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 enum AppPrefKey {
@@ -85,5 +86,33 @@ class AppPrefHelper {
     final language = AppPref.get(AppPrefKey.language, 'en') as String;
     AppLogger.info('language: $language');
     return language;
+  }
+
+  static Future<bool> saveThemeMode(ThemeMode themeMode) async {
+    String themeString;
+    switch (themeMode) {
+      case ThemeMode.light:
+        themeString = 'light';
+      case ThemeMode.dark:
+        themeString = 'dark';
+      case ThemeMode.system:
+        themeString = 'system';
+    }
+    return AppPref.save(AppPrefKey.theme, themeString);
+  }
+
+  static ThemeMode getThemeMode() {
+    final themeString = AppPref.get(AppPrefKey.theme, 'system') as String;
+    AppLogger.info('theme: $themeString');
+
+    switch (themeString) {
+      case 'light':
+        return ThemeMode.light;
+      case 'dark':
+        return ThemeMode.dark;
+      case 'system':
+      default:
+        return ThemeMode.system;
+    }
   }
 }
