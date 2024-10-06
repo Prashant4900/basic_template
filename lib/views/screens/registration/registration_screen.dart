@@ -4,9 +4,9 @@ import 'package:basic_template/services/app_logger.dart';
 import 'package:basic_template/services/app_prefs.dart';
 import 'package:basic_template/views/components/body_widget.dart';
 import 'package:basic_template/views/components/buttons.dart';
+import 'package:basic_template/views/components/custom_text_field';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 
 class MyRegistrationScreen extends StatefulWidget {
@@ -148,37 +148,6 @@ class _MyRegistrationScreenState extends State<MyRegistrationScreen> {
             ),
             verticalMargin16,
           ],
-        ),
-      ),
-    );
-  }
-}
-
-class CustomTextField extends StatelessWidget {
-  const CustomTextField({
-    required TextEditingController nameController,
-    required this.detail,
-    required this.validation,
-    required this.iconData,
-    super.key,
-  }) : _nameController = nameController;
-
-  final TextEditingController _nameController;
-  final String detail;
-  final FormFieldValidator<String> validation;
-  final IconData iconData;
-
-  @override
-  Widget build(BuildContext context) {
-    return TextFormField(
-      controller: _nameController,
-      validator: validation,
-      keyboardType: TextInputType.name,
-      decoration: InputDecoration(
-        prefixIcon: Icon(iconData),
-        hintText: detail,
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(10.h),
         ),
       ),
     );
