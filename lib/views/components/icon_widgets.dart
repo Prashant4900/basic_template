@@ -24,3 +24,23 @@ class PrimaryIcon extends StatelessWidget {
     );
   }
 }
+
+class GreyIcon extends StatelessWidget {
+  const GreyIcon(
+    this.icon, {
+    super.key,
+    this.size,
+  });
+
+  final IconData icon;
+  final double? size;
+
+  @override
+  Widget build(BuildContext context) {
+    return Icon(
+      icon,
+      size: size ?? 32.dm,
+      color: const Color(0xFFA8A8A8),
+    );
+  }
+}

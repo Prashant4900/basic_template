@@ -92,7 +92,7 @@ class _MyRegistrationScreenState extends State<MyRegistrationScreen> {
               iconData: Icons.phone,
               validation: (value) {
                 if (value!.isEmpty) return 'Please Number can not be empty';
-                if (value.length >= 8 && value.length <= 15)
+                if (value.length <= 8 && value.length >= 15)
                   return 'Phone Number must be greater than 8 and less than 15';
                 return null;
               },

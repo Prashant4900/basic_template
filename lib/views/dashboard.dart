@@ -22,15 +22,12 @@ class _MyDashboardState extends State<MyDashboard> {
       bottomNavigationBar: NavigationBar(
         selectedIndex: _currentIndex,
         onDestinationSelected: (index) {
-          // switch (index) {
-          //   case 0:
-          //     context.go(MyRoutes.home);
-          //   case 1:
-          //     context.go(MyRoutes.bookmark);
-          //   case 2:
-          //     context.go(MyRoutes.setting);
-          // }
-          context.go(MyRoutes.home);
+          switch (index) {
+            case 0:
+              context.go(MyRoutes.home);
+            case 1:
+              context.go(MyRoutes.setting);
+          }
           _currentIndex = index;
         },
         destinations: const [
@@ -38,11 +35,6 @@ class _MyDashboardState extends State<MyDashboard> {
             selectedIcon: PrimaryIcon(Icons.dashboard),
             icon: Icon(Icons.dashboard),
             label: 'Home',
-          ),
-          NavigationDestination(
-            selectedIcon: PrimaryIcon(Icons.analytics),
-            icon: Icon(Icons.analytics),
-            label: 'Analysis',
           ),
           NavigationDestination(
             selectedIcon: PrimaryIcon(Icons.settings),
