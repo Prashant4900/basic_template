@@ -1,9 +1,12 @@
+import 'package:basic_template/routes/routers.dart';
 import 'package:basic_template/views/components/icon_widgets.dart';
-import 'package:basic_template/views/screens/home_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class MyDashboard extends StatefulWidget {
-  const MyDashboard({super.key});
+  const MyDashboard({required this.child, super.key});
+
+  final Widget child;
 
   @override
   State<MyDashboard> createState() => _MyDashboardState();
@@ -15,16 +18,21 @@ class _MyDashboardState extends State<MyDashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: const IndexedStack(
-        children: [
-          MyHomeScreen(),
-          MyHomeScreen(),
-          MyHomeScreen(),
-        ],
-      ),
+      body: widget.child,
       bottomNavigationBar: NavigationBar(
         selectedIndex: _currentIndex,
-        onDestinationSelected: (value) => setState(() => _currentIndex = value),
+        onDestinationSelected: (index) {
+          // switch (index) {
+          //   case 0:
+          //     context.go(MyRoutes.home);
+          //   case 1:
+          //     context.go(MyRoutes.bookmark);
+          //   case 2:
+          //     context.go(MyRoutes.setting);
+          // }
+          context.go(MyRoutes.home);
+          _currentIndex = index;
+        },
         destinations: const [
           NavigationDestination(
             selectedIcon: PrimaryIcon(Icons.dashboard),

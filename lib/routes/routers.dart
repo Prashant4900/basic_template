@@ -1,3 +1,4 @@
+import 'package:basic_template/views/dashboard.dart';
 import 'package:basic_template/views/screens/home_screen.dart';
 import 'package:basic_template/views/screens/onboarding/onboarding_screen.dart';
 import 'package:basic_template/views/screens/registration/registration_screen.dart';
@@ -31,11 +32,13 @@ final routerConfig = GoRouter(
     ),
     ShellRoute(
       navigatorKey: _shellNavigatorKey,
+      builder: (context, state, child) => MyDashboard(child: child),
       routes: [
         GoRoute(
           parentNavigatorKey: _shellNavigatorKey,
           path: MyRoutes.home,
-          builder: (context, state) => const MyHomeScreen(),
+          pageBuilder: (context, state) =>
+              const NoTransitionPage(child: MyHomeScreen()),
         ),
       ],
     ),
