@@ -1,27 +1,10 @@
 import 'package:basic_template/common/dimensions.dart';
 import 'package:basic_template/gen/assets.gen.dart';
+import 'package:basic_template/l10n/l10n.dart';
 import 'package:basic_template/routes/routers.dart';
 import 'package:basic_template/views/components/indicators.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
-final List<Map<String, String>> onboardingPageData = [
-  {
-    'image': Assets.images.onboardingImageOne.path,
-    'title': 'Welcome to our freedom \nmessaging app',
-    'subtitle': 'Freedom talk any person of your \nmother language.',
-  },
-  {
-    'image': Assets.images.onboardingImageOne.path,
-    'title': 'Welcome to our freedom \nmessaging app 1',
-    'subtitle': 'Freedom talk any person of your \nmother language.',
-  },
-  {
-    'image': Assets.images.onboardingImageOne.path,
-    'title': 'Welcome to our freedom \nmessaging app 2',
-    'subtitle': 'Freedom talk any person of your \nmother language.',
-  }
-];
 
 class MyOnboardingScreen extends StatefulWidget {
   const MyOnboardingScreen({super.key});
@@ -49,6 +32,24 @@ class _MyOnboardingScreenState extends State<MyOnboardingScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final onboardingPageData = <Map<String, String>>[
+      {
+        'image': Assets.images.onboardingImageOne.path,
+        'title': context.lang.welcomeMessage,
+        'subtitle': 'Freedom talk any person of your \nmother language.',
+      },
+      {
+        'image': Assets.images.onboardingImageOne.path,
+        'title': context.lang.welcomeMessage,
+        'subtitle': 'Freedom talk any person of your \nmother language.',
+      },
+      {
+        'image': Assets.images.onboardingImageOne.path,
+        'title': context.lang.welcomeMessage,
+        'subtitle': 'Freedom talk any person of your \nmother language.',
+      }
+    ];
+
     return Scaffold(
       body: SafeArea(
         child: PageView.builder(
@@ -81,7 +82,7 @@ class _MyOnboardingScreenState extends State<MyOnboardingScreen> {
                 }
               },
               child: Text(
-                currentPage == 0 ? 'Skip' : 'Pervious',
+                currentPage == 0 ? context.lang.skip : context.lang.previous,
               ),
             ),
             Row(
@@ -104,8 +105,8 @@ class _MyOnboardingScreenState extends State<MyOnboardingScreen> {
               },
               child: Text(
                 currentPage != onboardingPageData.length - 1
-                    ? 'Next'
-                    : 'Submit',
+                    ? context.lang.next
+                    : context.lang.submit,
               ),
             ),
           ],

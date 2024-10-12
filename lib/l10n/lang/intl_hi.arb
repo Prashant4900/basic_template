@@ -1,8 +1,243 @@
 {
     "@@locale": "hi",
-    "helloWorld": "Hello, World! Hindi",
+    "helloWorld": "नमस्ते, दुनिया! हिंदी",
     "@helloWorld": {
         "type": "text",
-        "description": "A hello world message"
+        "description": "एक नमस्ते दुनिया संदेश"
+    },
+    "hi": "नमस्ते",
+    "@hi": {
+        "type": "text",
+        "description": "एक अभिवादन संदेश"
+    },
+    "selectLanguage": "भाषा चुनें",
+    "@selectLanguage": {
+        "type": "text",
+        "description": "भाषा चुनने का एक प्रॉम्प्ट"
+    },
+    "onboardingTitle1": "हमारे स्वतंत्र \nसंदेश ऐप में आपका स्वागत है",
+    "onboardingSubtitle1": "आप अपनी मातृ भाषा में किसी भी व्यक्ति से बात कर सकते हैं।",
+    "onboardingTitle2": "हमारे स्वतंत्र \nसंदेश ऐप में आपका स्वागत है 1",
+    "onboardingSubtitle2": "आप अपनी मातृ भाषा में किसी भी व्यक्ति से बात कर सकते हैं।",
+    "onboardingTitle3": "हमारे स्वतंत्र \nसंदेश ऐप में आपका स्वागत है 2",
+    "onboardingSubtitle3": "आप अपनी मातृ भाषा में किसी भी व्यक्ति से बात कर सकते हैं।",
+    "@onboardingTitle1": {
+        "type": "text",
+        "description": "ऑनबोर्डिंग पृष्ठ 1 शीर्षक"
+    },
+    "@onboardingSubtitle1": {
+        "type": "text",
+        "description": "ऑनबोर्डिंग पृष्ठ 1 उपशीर्षक"
+    },
+    "@onboardingTitle2": {
+        "type": "text",
+        "description": "ऑनबोर्डिंग पृष्ठ 2 शीर्षक"
+    },
+    "@onboardingSubtitle2": {
+        "type": "text",
+        "description": "ऑनबोर्डिंग पृष्ठ 2 उपशीर्षक"
+    },
+    "@onboardingTitle3": {
+        "type": "text",
+        "description": "ऑनबोर्डिंग पृष्ठ 3 शीर्षक"
+    },
+    "@onboardingSubtitle3": {
+        "type": "text",
+        "description": "ऑनबोर्डिंग पृष्ठ 3 उपशीर्षक"
+    },
+    "skip": "छोड़ें",
+    "previous": "पिछला",
+    "next": "आगे",
+    "submit": "सबमिट करें",
+    "@skip": {
+        "type": "text",
+        "description": "ऑनबोर्डिंग छोड़ें"
+    },
+    "@previous": {
+        "type": "text",
+        "description": "पिछले ऑनबोर्डिंग पृष्ठ पर जाएं"
+    },
+    "@next": {
+        "type": "text",
+        "description": "अगले ऑनबोर्डिंग पृष्ठ पर जाएं"
+    },
+    "@submit": {
+        "type": "text",
+        "description": "ऑनबोर्डिंग सबमिट करें"
+    },
+    "enterDetails": "विवरण दर्ज करें",
+    "@enterDetails": {
+        "type": "text",
+        "description": "पंजीकरण विवरण दर्ज करने के लिए शीर्षक"
+    },
+    "welcomeMessage": "स्वागत है! कृपया अपना नाम, ईमेल, और फोन नंबर दर्ज करें ताकि आप अपनी पंजीकरण पूरी कर सकें और ऐप का उपयोग जारी रख सकें।",
+    "@welcomeMessage": {
+        "type": "text",
+        "description": "पंजीकरण विवरण दर्ज करने के लिए निर्देश"
+    },
+    "name": "नाम",
+    "@name": {
+        "type": "text",
+        "description": "नाम इनपुट फ़ील्ड के लिए लेबल"
+    },
+    "email": "ईमेल",
+    "@email": {
+        "type": "text",
+        "description": "ईमेल इनपुट फ़ील्ड के लिए लेबल"
+    },
+    "phoneNumber": "फोन नंबर",
+    "@phoneNumber": {
+        "type": "text",
+        "description": "फोन नंबर इनपुट फ़ील्ड के लिए लेबल"
+    },
+    "nameEmptyError": "नाम खाली नहीं हो सकता।",
+    "@nameEmptyError": {
+        "type": "text",
+        "description": "खाली नाम फ़ील्ड के लिए त्रुटि संदेश"
+    },
+    "nameLengthError": "नाम 3 अक्षरों से अधिक होना चाहिए।",
+    "@nameLengthError": {
+        "type": "text",
+        "description": "नाम की लंबाई सत्यापन के लिए त्रुटि संदेश"
+    },
+    "emailEmptyError": "ईमेल खाली नहीं हो सकता।",
+    "@emailEmptyError": {
+        "type": "text",
+        "description": "खाली ईमेल फ़ील्ड के लिए त्रुटि संदेश"
+    },
+    "emailInvalidError": "कृपया एक मान्य ईमेल पता दर्ज करें।",
+    "@emailInvalidError": {
+        "type": "text",
+        "description": "अमान्य ईमेल पते के लिए त्रुटि संदेश"
+    },
+    "phoneNumberEmptyError": "फोन नंबर खाली नहीं हो सकता।",
+    "@phoneNumberEmptyError": {
+        "type": "text",
+        "description": "खाली फोन नंबर फ़ील्ड के लिए त्रुटि संदेश"
+    },
+    "phoneNumberLengthError": "फोन नंबर 8 से अधिक और 15 से कम होना चाहिए।",
+    "@phoneNumberLengthError": {
+        "type": "text",
+        "description": "फोन नंबर की लंबाई सत्यापन के लिए त्रुटि संदेश"
+    },
+    "termsOfService": "सेवाओं की शर्तें",
+    "@termsOfService": {
+        "type": "text",
+        "description": "सेवाओं की शर्तों के लिए लिंक पाठ"
+    },
+    "privacyPolicy": "गोपनीयता नीति",
+    "@privacyPolicy": {
+        "type": "text",
+        "description": "गोपनीयता नीति के लिए लिंक पाठ"
+    },
+    "setting": "सेटिंग",
+    "@setting": {
+        "type": "text",
+        "description": "सेटिंग स्क्रीन के लिए शीर्षक"
+    },
+    "general": "सामान्य",
+    "@general": {
+        "type": "text",
+        "description": "सामान्य सेटिंग्स के लिए अनुभाग शीर्षक"
+    },
+    "accountDetails": "खाते की जानकारी",
+    "@accountDetails": {
+        "type": "text",
+        "description": "खाते की जानकारी विकल्प के लिए शीर्षक"
+    },
+    "theme": "थीम",
+    "@theme": {
+        "type": "text",
+        "description": "थीम विकल्प के लिए शीर्षक"
+    },
+    "language": "भाषा",
+    "@language": {
+        "type": "text",
+        "description": "भाषा विकल्प के लिए शीर्षक"
+    },
+    "info": "जानकारी",
+    "@info": {
+        "type": "text",
+        "description": "जानकारी सेटिंग्स के लिए अनुभाग शीर्षक"
+    },
+    "rateMyApp": "मेरे ऐप की रेटिंग करें",
+    "@rateMyApp": {
+        "type": "text",
+        "description": "मेरे ऐप की रेटिंग विकल्प के लिए शीर्षक"
+    },
+    "privacyPolicyOption": "गोपनीयता नीति",
+    "@privacyPolicyOption": {
+        "type": "text",
+        "description": "गोपनीयता नीति विकल्प के लिए शीर्षक"
+    },
+    "termsOfServiceOption": "सेवाओं की शर्तें",
+    "@termsOfServiceOption": {
+        "type": "text",
+        "description": "सेवाओं की शर्तें विकल्प के लिए शीर्षक"
+    },
+    "contract": "संविदा",
+    "@contract": {
+        "type": "text",
+        "description": "संविदा विकल्प के लिए शीर्षक"
+    },
+    "version": "संस्करण",
+    "@version": {
+        "type": "text",
+        "description": "संस्करण जानकारी के लिए लेबल"
+    },
+    "versionInfo": "1.0.1 (17)",
+    "@versionInfo": {
+        "type": "text",
+        "description": "ऐप के वर्तमान संस्करण को दिखाते हुए उपशीर्षक"
+    },
+    "accountDetail": "खाते का विवरण",
+    "@accountDetail": {
+        "type": "text",
+        "description": "खाते के विवरण स्क्रीन के लिए शीर्षक"
+    },
+    "updateDetails": "विवरण अपडेट करें",
+    "@updateDetails": {
+        "type": "text",
+        "description": "खाते के विवरण अपडेट करने के लिए शीर्षक"
+    },
+    "updateProfileMessage": "अपने नाम, ईमेल और फोन नंबर को अपडेट करें ताकि आपका प्रोफ़ाइल अद्यतित रहे और आप ऐप का उपयोग जारी रख सकें।",
+    "@updateProfileMessage": {
+        "type": "text",
+        "description": "अपडेट फ़ॉर्म के उद्देश्य को समझाते हुए संदेश"
+    },
+    "update": "अपडेट करें",
+    "@update": {
+        "type": "text",
+        "description": "अपडेट बटन के लिए लेबल"
+    },
+    "nameCannotBeEmpty": "नाम खाली नहीं हो सकता",
+    "@nameCannotBeEmpty": {
+        "type": "text",
+        "description": "खाली नाम फ़ील्ड के लिए मान्यता संदेश"
+    },
+    "nameTooShort": "नाम 3 अक्षरों से अधिक होना चाहिए",
+    "@nameTooShort": {
+        "type": "text",
+        "description": "छोटे नाम के लिए मान्यता संदेश"
+    },
+    "emailCannotBeEmpty": "ईमेल खाली नहीं हो सकता",
+    "@emailCannotBeEmpty": {
+        "type": "text",
+        "description": "खाली ईमेल फ़ील्ड के लिए मान्यता संदेश"
+    },
+    "invalidEmail": "कृपया एक मान्य ईमेल पता दर्ज करें",
+    "@invalidEmail": {
+        "type": "text",
+        "description": "अमान्य ईमेल फ़ॉर्मेट के लिए मान्यता संदेश"
+    },
+    "phoneNumberCannotBeEmpty": "फोन नंबर खाली नहीं हो सकता",
+    "@phoneNumberCannotBeEmpty": {
+        "type": "text",
+        "description": "खाली फोन नंबर फ़ील्ड के लिए मान्यता संदेश"
+    },
+    "phoneNumberLengthError": "फोन नंबर 8 से अधिक और 15 से कम होना चाहिए",
+    "@phoneNumberLengthError": {
+        "type": "text",
+        "description": "गलत फोन नंबर लंबाई के लिए मान्यता संदेश"
     }
 }

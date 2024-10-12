@@ -1,3 +1,4 @@
+import 'package:basic_template/l10n/l10n.dart';
 import 'package:basic_template/views/components/header.dart';
 import 'package:basic_template/views/screens/language/cubit/language_cubit.dart';
 import 'package:flutter/material.dart';
@@ -9,7 +10,7 @@ class MyLanguageScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: headerNav(context, title: 'Select Language'),
+      appBar: headerNav(context, title: context.lang.selectLanguage),
       body: ListView(
         children: [
           ListTile(

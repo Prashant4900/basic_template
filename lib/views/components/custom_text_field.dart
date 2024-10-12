@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomTextField extends StatelessWidget {
-  CustomTextField({
-    required  this.nameController,
+  const CustomTextField({
+    required this.nameController,
     required this.detail,
     required this.validation,
     required this.iconData,

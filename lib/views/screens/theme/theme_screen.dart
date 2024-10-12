@@ -1,4 +1,5 @@
 import 'package:basic_template/common/dimensions.dart';
+import 'package:basic_template/l10n/l10n.dart';
 import 'package:basic_template/views/components/body_widget.dart';
 import 'package:basic_template/views/components/header.dart';
 import 'package:basic_template/views/screens/theme/cubit/theme_cubit.dart';
@@ -11,7 +12,7 @@ class MyThemeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: headerNav(context, title: 'Theme'),
+      appBar: headerNav(context, title: context.lang.theme),
       body: BodyWidget(
         child: Column(
           children: [

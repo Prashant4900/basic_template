@@ -1,3 +1,4 @@
+import 'package:basic_template/l10n/l10n.dart';
 import 'package:basic_template/routes/routers.dart';
 import 'package:basic_template/views/components/icon_widgets.dart';
 import 'package:flutter/material.dart';
@@ -30,16 +31,16 @@ class _MyDashboardState extends State<MyDashboard> {
           }
           _currentIndex = index;
         },
-        destinations: const [
-          NavigationDestination(
+        destinations: [
+          const NavigationDestination(
             selectedIcon: PrimaryIcon(Icons.dashboard),
             icon: Icon(Icons.dashboard),
             label: 'Home',
           ),
           NavigationDestination(
-            selectedIcon: PrimaryIcon(Icons.settings),
-            icon: Icon(Icons.settings),
-            label: 'Setting',
+            selectedIcon: const PrimaryIcon(Icons.settings),
+            icon: const Icon(Icons.settings),
+            label: context.lang.setting,
           ),
         ],
       ),

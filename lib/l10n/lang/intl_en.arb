@@ -4,5 +4,240 @@
     "@helloWorld": {
         "type": "text",
         "description": "A hello world message"
+    },
+    "hi": "Hi",
+    "@hi": {
+        "type": "text",
+        "description": "A greeting message"
+    },
+    "selectLanguage": "Select Language",
+    "@selectLanguage": {
+        "type": "text",
+        "description": "A prompt to select the language"
+    },
+    "onboardingTitle1": "Welcome to our freedom \nmessaging app",
+    "onboardingSubtitle1": "Freedom talk any person of your \nmother language.",
+    "onboardingTitle2": "Welcome to our freedom \nmessaging app 1",
+    "onboardingSubtitle2": "Freedom talk any person of your \nmother language.",
+    "onboardingTitle3": "Welcome to our freedom \nmessaging app 2",
+    "onboardingSubtitle3": "Freedom talk any person of your \nmother language.",
+    "@onboardingTitle1": {
+        "type": "text",
+        "description": "Onboarding page 1 title"
+    },
+    "@onboardingSubtitle1": {
+        "type": "text",
+        "description": "Onboarding page 1 subtitle"
+    },
+    "@onboardingTitle2": {
+        "type": "text",
+        "description": "Onboarding page 2 title"
+    },
+    "@onboardingSubtitle2": {
+        "type": "text",
+        "description": "Onboarding page 2 subtitle"
+    },
+    "@onboardingTitle3": {
+        "type": "text",
+        "description": "Onboarding page 3 title"
+    },
+    "@onboardingSubtitle3": {
+        "type": "text",
+        "description": "Onboarding page 3 subtitle"
+    },
+    "skip": "Skip",
+    "previous": "Previous",
+    "next": "Next",
+    "submit": "Submit",
+    "@skip": {
+        "type": "text",
+        "description": "Skip the onboarding"
+    },
+    "@previous": {
+        "type": "text",
+        "description": "Go to the previous onboarding page"
+    },
+    "@next": {
+        "type": "text",
+        "description": "Go to the next onboarding page"
+    },
+    "@submit": {
+        "type": "text",
+        "description": "Submit the onboarding"
+    },
+    "enterDetails": "Enter Details",
+    "@enterDetails": {
+        "type": "text",
+        "description": "Title for entering registration details"
+    },
+    "welcomeMessage": "Welcome! Please enter your name, email, and phone number to complete your registration and continue to the app.",
+    "@welcomeMessage": {
+        "type": "text",
+        "description": "Instructions for entering registration details"
+    },
+    "name": "Name",
+    "@name": {
+        "type": "text",
+        "description": "Label for the name input field"
+    },
+    "email": "Email",
+    "@email": {
+        "type": "text",
+        "description": "Label for the email input field"
+    },
+    "phoneNumber": "Phone Number",
+    "@phoneNumber": {
+        "type": "text",
+        "description": "Label for the phone number input field"
+    },
+    "nameEmptyError": "Name cannot be empty.",
+    "@nameEmptyError": {
+        "type": "text",
+        "description": "Error message for empty name field"
+    },
+    "nameLengthError": "Name must be greater than 3 characters.",
+    "@nameLengthError": {
+        "type": "text",
+        "description": "Error message for name length validation"
+    },
+    "emailEmptyError": "Email cannot be empty.",
+    "@emailEmptyError": {
+        "type": "text",
+        "description": "Error message for empty email field"
+    },
+    "emailInvalidError": "Please enter a valid email address.",
+    "@emailInvalidError": {
+        "type": "text",
+        "description": "Error message for invalid email address"
+    },
+    "phoneNumberEmptyError": "Phone Number cannot be empty.",
+    "@phoneNumberEmptyError": {
+        "type": "text",
+        "description": "Error message for empty phone number field"
+    },
+    "phoneNumberLengthError": "Phone Number must be greater than 8 and less than 15.",
+    "@phoneNumberLengthError": {
+        "type": "text",
+        "description": "Error message for phone number length validation"
+    },
+    "termsOfService": "Terms of Services",
+    "@termsOfService": {
+        "type": "text",
+        "description": "Link text for Terms of Services"
+    },
+    "privacyPolicy": "Privacy Policy",
+    "@privacyPolicy": {
+        "type": "text",
+        "description": "Link text for Privacy Policy"
+    },
+    "setting": "Setting",
+    "@setting": {
+        "type": "text",
+        "description": "Title for the settings screen"
+    },
+    "general": "General",
+    "@general": {
+        "type": "text",
+        "description": "Section title for general settings"
+    },
+    "accountDetails": "Account details",
+    "@accountDetails": {
+        "type": "text",
+        "description": "Title for the account details option"
+    },
+    "theme": "Theme",
+    "@theme": {
+        "type": "text",
+        "description": "Title for the theme option"
+    },
+    "language": "Language",
+    "@language": {
+        "type": "text",
+        "description": "Title for the language option"
+    },
+    "info": "Info",
+    "@info": {
+        "type": "text",
+        "description": "Section title for info settings"
+    },
+    "rateMyApp": "Rate my app",
+    "@rateMyApp": {
+        "type": "text",
+        "description": "Title for the rate my app option"
+    },
+    "privacyPolicyOption": "Privacy policy",
+    "@privacyPolicyOption": {
+        "type": "text",
+        "description": "Title for the privacy policy option"
+    },
+    "termsOfServiceOption": "Terms of Service",
+    "@termsOfServiceOption": {
+        "type": "text",
+        "description": "Title for the terms of service option"
+    },
+    "contract": "Contract",
+    "@contract": {
+        "type": "text",
+        "description": "Title for the contract option"
+    },
+    "version": "Version",
+    "@version": {
+        "type": "text",
+        "description": "Label for the version information"
+    },
+    "versionInfo": "1.0.1 (17)",
+    "@versionInfo": {
+        "type": "text",
+        "description": "Subtitle showing the current version of the app"
+    },
+    "accountDetail": "Account Detail",
+    "@accountDetail": {
+        "type": "text",
+        "description": "Title for the account detail screen"
+    },
+    "updateDetails": "Update Details",
+    "@updateDetails": {
+        "type": "text",
+        "description": "Header for updating account details"
+    },
+    "updateProfileMessage": "Update your name, email, and phone number to keep your profile up-to-date and continue using the app.",
+    "@updateProfileMessage": {
+        "type": "text",
+        "description": "Message explaining the purpose of the update form"
+    },
+    "update": "Update",
+    "@update": {
+        "type": "text",
+        "description": "Label for the update button"
+    },
+    "nameCannotBeEmpty": "Name can not be empty",
+    "@nameCannotBeEmpty": {
+        "type": "text",
+        "description": "Validation message for empty name field"
+    },
+    "nameTooShort": "Name must be greater than 3 characters",
+    "@nameTooShort": {
+        "type": "text",
+        "description": "Validation message for short name"
+    },
+    "emailCannotBeEmpty": "Email can not be empty",
+    "@emailCannotBeEmpty": {
+        "type": "text",
+        "description": "Validation message for empty email field"
+    },
+    "invalidEmail": "Please enter a valid email address",
+    "@invalidEmail": {
+        "type": "text",
+        "description": "Validation message for invalid email format"
+    },
+    "phoneNumberCannotBeEmpty": "Phone Number can not be empty",
+    "@phoneNumberCannotBeEmpty": {
+        "type": "text",
+        "description": "Validation message for empty phone number field"
+    },
+    "phoneNumberLengthError": "Phone Number must be greater than 8 and less than 15",
+    "@phoneNumberLengthError": {
+        "type": "text",
+        "description": "Validation message for incorrect phone number length"
     }
 }

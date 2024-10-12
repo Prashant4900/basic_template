@@ -1,10 +1,11 @@
 import 'package:basic_template/common/dimensions.dart';
+import 'package:basic_template/l10n/l10n.dart';
 import 'package:basic_template/routes/routers.dart';
 import 'package:basic_template/services/app_logger.dart';
 import 'package:basic_template/services/app_prefs.dart';
 import 'package:basic_template/views/components/body_widget.dart';
 import 'package:basic_template/views/components/buttons.dart';
-import 'package:basic_template/views/components/custom_text_field';
+import 'package:basic_template/views/components/custom_text_field.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -48,7 +49,7 @@ class _MyRegistrationScreenState extends State<MyRegistrationScreen> {
           children: [
             verticalMargin20,
             Text(
-              'Enter Details',
+              context.lang.enterDetails,
               style: Theme.of(context)
                   .textTheme
                   .titleLarge!
@@ -56,13 +57,13 @@ class _MyRegistrationScreenState extends State<MyRegistrationScreen> {
             ),
             const SizedBox(height: 8),
             Text(
-              '''Welcome! Please enter your name, email, and phone number to complete your registration and continue to the app.''',
+              context.lang.welcomeMessage,
               style: Theme.of(context).textTheme.bodyMedium,
             ),
             verticalMargin48,
             CustomTextField(
               nameController: _nameController,
-              detail: 'Name',
+              detail: context.lang.name,
               iconData: Icons.person,
               validation: (value) {
                 if (value!.isEmpty) return 'Name can not be empty';
@@ -73,7 +74,7 @@ class _MyRegistrationScreenState extends State<MyRegistrationScreen> {
             verticalMargin24,
             CustomTextField(
               nameController: _emailController,
-              detail: 'Email',
+              detail: context.lang.email,
               iconData: Icons.email,
               validation: (value) {
                 if (value!.isEmpty) return 'Email can not be empty';
@@ -88,7 +89,7 @@ class _MyRegistrationScreenState extends State<MyRegistrationScreen> {
             verticalMargin24,
             CustomTextField(
               nameController: _phoneNumberController,
-              detail: 'Phone Number',
+              detail: context.lang.phoneNumber,
               iconData: Icons.phone,
               validation: (value) {
                 if (value!.isEmpty) return 'Please Number can not be empty';

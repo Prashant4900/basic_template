@@ -3,7 +3,7 @@ import 'package:basic_template/routes/routers.dart';
 import 'package:basic_template/services/app_prefs.dart';
 import 'package:basic_template/views/components/body_widget.dart';
 import 'package:basic_template/views/components/buttons.dart';
-import 'package:basic_template/views/components/custom_text_field';
+import 'package:basic_template/views/components/custom_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
