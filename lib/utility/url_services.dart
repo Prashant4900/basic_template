@@ -25,4 +25,14 @@ class UrlUtility {
       AppLogger.error(e.toString());
     }
   }
+
+  static Future<void> launch(String url) async {
+    try {
+      final uri = Uri.parse(url);
+
+      await launchUrl(uri);
+    } catch (e) {
+      AppLogger.error(e.toString());
+    }
+  }
 }

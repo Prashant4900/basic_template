@@ -1,6 +1,7 @@
 import 'package:basic_template/common/dimensions.dart';
 import 'package:basic_template/l10n/l10n.dart';
 import 'package:basic_template/routes/routers.dart';
+import 'package:basic_template/utility/url_services.dart';
 import 'package:basic_template/views/components/body_widget.dart';
 import 'package:basic_template/views/components/header.dart';
 import 'package:basic_template/views/components/text_widgets.dart';
@@ -45,14 +46,19 @@ class MySettingScreen extends StatelessWidget {
             SettingTileWidget(
               title: context.lang.privacyPolicy,
               leadingIcon: Icons.privacy_tip,
+              onTap: () async =>
+                  UrlUtility.launch('https://dumbphone.so/privacy-policy'),
             ),
             SettingTileWidget(
               title: context.lang.termsOfService,
               leadingIcon: Icons.verified_user_rounded,
+              onTap: () async =>
+                  UrlUtility.launch('https://dumbphone.so/privacy-policy'),
             ),
             SettingTileWidget(
               title: context.lang.contract,
               leadingIcon: Icons.mail,
+              onTap: () async => UrlUtility.contactUs(),
             ),
             SettingTileWidget(
               title: context.lang.version,
