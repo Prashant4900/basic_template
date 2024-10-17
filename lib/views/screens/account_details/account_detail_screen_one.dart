@@ -7,14 +7,15 @@ import 'package:basic_template/views/components/custom_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class MyAccountDetailScreen extends StatefulWidget {
-  const MyAccountDetailScreen({super.key});
+class MyAccountDetailScreenOne extends StatefulWidget {
+  const MyAccountDetailScreenOne({super.key});
 
   @override
-  State<MyAccountDetailScreen> createState() => _MyAccountDetailScreenState();
+  State<MyAccountDetailScreenOne> createState() =>
+      _MyAccountDetailScreenOneState();
 }
 
-class _MyAccountDetailScreenState extends State<MyAccountDetailScreen> {
+class _MyAccountDetailScreenOneState extends State<MyAccountDetailScreenOne> {
   final _formKey = GlobalKey<FormState>();
   late final TextEditingController _nameController;
   late final TextEditingController _emailController;
@@ -81,8 +82,9 @@ class _MyAccountDetailScreenState extends State<MyAccountDetailScreen> {
                 final emailRegExp = RegExp(
                   r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$',
                 );
-                if (!emailRegExp.hasMatch(value))
+                if (!emailRegExp.hasMatch(value)) {
                   return 'Please enter a valid email address';
+                }
                 return null;
               },
             ),
@@ -93,8 +95,9 @@ class _MyAccountDetailScreenState extends State<MyAccountDetailScreen> {
               iconData: Icons.phone,
               validation: (value) {
                 if (value!.isEmpty) return 'Please Number can not be empty';
-                if (value.length <= 8 && value.length >= 15)
+                if (value.length <= 8 && value.length >= 15) {
                   return 'Phone Number must be greater than 8 and less than 15';
+                }
                 return null;
               },
             ),

@@ -45,23 +45,15 @@ class _MyAppState extends State<MyApp> {
           child: BlocBuilder<ThemeCubit, ThemeState>(
             builder: (context, themeState) {
               return BlocBuilder<LanguageCubit, LanguageState>(
-                builder: (context, state) {
-                  final appLocale = (state is LanguageChanged)
-                      ? state.locale
-                      : const Locale('en');
-
-                  final themeMode = (themeState is ThemeChanged)
-                      ? themeState.themeMode
-                      : ThemeMode.system;
-
+                builder: (context, languageState) {
                   return MaterialApp.router(
                     title: 'Flutter Demo',
                     theme: lightTheme(context),
                     darkTheme: darkTheme(context),
-                    themeMode: themeMode,
+                    themeMode: themeState.themeMode,
                     debugShowCheckedModeBanner: false,
                     routerConfig: routerConfig,
-                    locale: appLocale,
+                    locale: languageState.locale,
                     supportedLocales: const [
                       Locale('en'),
                       Locale('hi'),

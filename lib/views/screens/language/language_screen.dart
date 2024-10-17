@@ -1,3 +1,4 @@
+import 'package:basic_template/common/dimensions.dart';
 import 'package:basic_template/l10n/l10n.dart';
 import 'package:basic_template/views/components/header.dart';
 import 'package:basic_template/views/screens/language/cubit/language_cubit.dart';
@@ -9,24 +10,37 @@ class MyLanguageScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: headerNav(context, title: context.lang.selectLanguage),
-      body: ListView(
-        children: [
-          ListTile(
-            title: const Text('English'),
-            onTap: () => context.read<LanguageCubit>().changeLanguage('en'),
+    return BlocBuilder<LanguageCubit, LanguageState>(
+      builder: (context, state) {
+        return Scaffold(
+          appBar: headerNav(context, title: context.lang.selectLanguage),
+          body: ListView(
+            children: [
+              ListTile(
+                title: const Text('English'),
+                trailing: state.locale == const Locale('en')
+                    ? const Icon(Icons.check)
+                    : emptyWidget,
+                onTap: () => context.read<LanguageCubit>().changeLanguage('en'),
+              ),
+              ListTile(
+                title: const Text('Spanish'),
+                trailing: state.locale == const Locale('es')
+                    ? const Icon(Icons.check)
+                    : emptyWidget,
+                onTap: () => context.read<LanguageCubit>().changeLanguage('es'),
+              ),
+              ListTile(
+                title: const Text('Hindi'),
+                trailing: state.locale == const Locale('hi')
+                    ? const Icon(Icons.check)
+                    : emptyWidget,
+                onTap: () => context.read<LanguageCubit>().changeLanguage('hi'),
+              ),
+            ],
           ),
-          ListTile(
-            title: const Text('Spanish'),
-            onTap: () => context.read<LanguageCubit>().changeLanguage('es'),
-          ),
-          ListTile(
-            title: const Text('Hindi'),
-            onTap: () => context.read<LanguageCubit>().changeLanguage('hi'),
-          ),
-        ],
-      ),
+        );
+      },
     );
   }
 }

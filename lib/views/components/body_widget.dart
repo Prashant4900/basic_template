@@ -27,7 +27,7 @@ class BodyWidget extends StatelessWidget {
               padding: padding ?? horizontalPadding16,
               child: Form(
                 key: formKey,
-                child: child,
+                child: SizedBox.expand(child: child),
               ),
             ),
           ),

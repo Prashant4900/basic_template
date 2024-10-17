@@ -115,11 +115,6 @@
         "type": "text",
         "description": "Mensaje de error para campo de número de teléfono vacío"
     },
-    "phoneNumberLengthError": "El número de teléfono debe tener más de 8 y menos de 15 caracteres.",
-    "@phoneNumberLengthError": {
-        "type": "text",
-        "description": "Mensaje de error para validación de longitud de número de teléfono"
-    },
     "termsOfService": "Términos de Servicio",
     "@termsOfService": {
         "type": "text",

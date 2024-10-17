@@ -1,16 +1,10 @@
 part of 'theme_cubit.dart';
 
-sealed class ThemeState extends Equatable {
-  const ThemeState();
+class ThemeState extends Equatable {
+  const ThemeState(this.themeMode);
 
-  @override
-  List<Object> get props => [];
-}
+  factory ThemeState.initial() => const ThemeState(ThemeMode.system);
 
-class ThemeInitial extends ThemeState {}
-
-class ThemeChanged extends ThemeState {
-  const ThemeChanged(this.themeMode);
   final ThemeMode themeMode;
 
   @override

@@ -6,16 +6,16 @@ import 'package:flutter/material.dart';
 part 'theme_state.dart';
 
 class ThemeCubit extends Cubit<ThemeState> {
-  ThemeCubit() : super(ThemeInitial());
+  ThemeCubit() : super(ThemeState.initial());
 
   Future<void> loadSavedTheme() async {
     final themeMode = AppPrefHelper.getThemeMode();
 
-    emit(ThemeChanged(themeMode));
+    emit(ThemeState(themeMode));
   }
 
   Future<void> changeTheme(ThemeMode themeMode) async {
     await AppPrefHelper.saveThemeMode(themeMode);
-    emit(ThemeChanged(themeMode));
+    emit(ThemeState(themeMode));
   }
 }

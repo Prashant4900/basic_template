@@ -115,11 +115,6 @@
         "type": "text",
         "description": "खाली फोन नंबर फ़ील्ड के लिए त्रुटि संदेश"
     },
-    "phoneNumberLengthError": "फोन नंबर 8 से अधिक और 15 से कम होना चाहिए।",
-    "@phoneNumberLengthError": {
-        "type": "text",
-        "description": "फोन नंबर की लंबाई सत्यापन के लिए त्रुटि संदेश"
-    },
     "termsOfService": "सेवाओं की शर्तें",
     "@termsOfService": {
         "type": "text",

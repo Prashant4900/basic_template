@@ -10,6 +10,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get helloWorld => 'Hello, World! English';
 
   @override
+  String get appName => 'FLutter Basic Template';
+
+  @override
   String get hi => 'Hi';
 
   @override
@@ -74,9 +77,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get phoneNumberEmptyError => 'Phone Number cannot be empty.';
-
-  @override
-  String get phoneNumberLengthError => 'Phone Number must be greater than 8 and less than 15';
 
   @override
   String get termsOfService => 'Terms of Services';
@@ -146,4 +146,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get phoneNumberCannotBeEmpty => 'Phone Number can not be empty';
+
+  @override
+  String get phoneNumberLengthError => 'Phone Number must be greater than 8 and less than 15';
 }

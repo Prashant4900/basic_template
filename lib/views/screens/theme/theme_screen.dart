@@ -11,36 +11,49 @@ class MyThemeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: headerNav(context, title: context.lang.theme),
-      body: BodyWidget(
-        child: Column(
-          children: [
-            verticalMargin12,
-            ListTile(
-              contentPadding: EdgeInsets.zero,
-              title: const Text('Light'),
-              leading: const Icon(Icons.light_mode),
-              onTap: () =>
-                  context.read<ThemeCubit>().changeTheme(ThemeMode.light),
+    return BlocBuilder<ThemeCubit, ThemeState>(
+      builder: (context, state) {
+        return Scaffold(
+          appBar: headerNav(context, title: context.lang.theme),
+          body: BodyWidget(
+            child: Column(
+              children: [
+                verticalMargin12,
+                ListTile(
+                  contentPadding: EdgeInsets.zero,
+                  title: const Text('Light'),
+                  leading: const Icon(Icons.light_mode),
+                  trailing: state.themeMode == ThemeMode.light
+                      ? const Icon(Icons.check)
+                      : emptyWidget,
+                  onTap: () =>
+                      context.read<ThemeCubit>().changeTheme(ThemeMode.light),
+                ),
+                ListTile(
+                  contentPadding: EdgeInsets.zero,
+                  title: const Text('Dark'),
+                  leading: const Icon(Icons.dark_mode),
+                  trailing: state.themeMode == ThemeMode.dark
+                      ? const Icon(Icons.check)
+                      : emptyWidget,
+                  onTap: () =>
+                      context.read<ThemeCubit>().changeTheme(ThemeMode.dark),
+                ),
+                ListTile(
+                  contentPadding: EdgeInsets.zero,
+                  title: const Text('System'),
+                  leading: const Icon(Icons.contrast),
+                  trailing: state.themeMode == ThemeMode.system
+                      ? const Icon(Icons.check)
+                      : emptyWidget,
+                  onTap: () =>
+                      context.read<ThemeCubit>().changeTheme(ThemeMode.system),
+                ),
+              ],
             ),
-            ListTile(
-              contentPadding: EdgeInsets.zero,
-              title: const Text('Dark'),
-              leading: const Icon(Icons.dark_mode),
-              onTap: () =>
-                  context.read<ThemeCubit>().changeTheme(ThemeMode.dark),
-            ),
-            ListTile(
-              contentPadding: EdgeInsets.zero,
-              title: const Text('System'),
-              leading: const Icon(Icons.contrast),
-              onTap: () =>
-                  context.read<ThemeCubit>().changeTheme(ThemeMode.system),
-            ),
-          ],
-        ),
-      ),
+          ),
+        );
+      },
     );
   }
 }

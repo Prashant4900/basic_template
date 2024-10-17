@@ -81,8 +81,9 @@ class _MyRegistrationScreenState extends State<MyRegistrationScreen> {
                 final emailRegExp = RegExp(
                   r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$',
                 );
-                if (!emailRegExp.hasMatch(value))
+                if (!emailRegExp.hasMatch(value)) {
                   return 'Please enter a valid email address';
+                }
                 return null;
               },
             ),
@@ -93,8 +94,9 @@ class _MyRegistrationScreenState extends State<MyRegistrationScreen> {
               iconData: Icons.phone,
               validation: (value) {
                 if (value!.isEmpty) return 'Please Number can not be empty';
-                if (value.length <= 8 && value.length >= 15)
+                if (value.length <= 8 && value.length >= 15) {
                   return 'Phone Number must be greater than 8 and less than 15';
+                }
                 return null;
               },
             ),

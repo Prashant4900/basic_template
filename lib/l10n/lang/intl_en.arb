@@ -5,6 +5,11 @@
         "type": "text",
         "description": "A hello world message"
     },
+    "appName": "FLutter Basic Template",
+    "@appName": {
+        "type": "text",
+        "description": "A app name"
+    },
     "hi": "Hi",
     "@hi": {
         "type": "text",
@@ -16,51 +21,51 @@
         "description": "A prompt to select the language"
     },
     "onboardingTitle1": "Welcome to our freedom \nmessaging app",
-    "onboardingSubtitle1": "Freedom talk any person of your \nmother language.",
-    "onboardingTitle2": "Welcome to our freedom \nmessaging app 1",
-    "onboardingSubtitle2": "Freedom talk any person of your \nmother language.",
-    "onboardingTitle3": "Welcome to our freedom \nmessaging app 2",
-    "onboardingSubtitle3": "Freedom talk any person of your \nmother language.",
     "@onboardingTitle1": {
         "type": "text",
         "description": "Onboarding page 1 title"
     },
+    "onboardingSubtitle1": "Freedom talk any person of your \nmother language.",
     "@onboardingSubtitle1": {
         "type": "text",
         "description": "Onboarding page 1 subtitle"
     },
+    "onboardingTitle2": "Welcome to our freedom \nmessaging app 1",
     "@onboardingTitle2": {
         "type": "text",
         "description": "Onboarding page 2 title"
     },
+    "onboardingSubtitle2": "Freedom talk any person of your \nmother language.",
     "@onboardingSubtitle2": {
         "type": "text",
         "description": "Onboarding page 2 subtitle"
     },
+    "onboardingTitle3": "Welcome to our freedom \nmessaging app 2",
     "@onboardingTitle3": {
         "type": "text",
         "description": "Onboarding page 3 title"
     },
+    "onboardingSubtitle3": "Freedom talk any person of your \nmother language.",
     "@onboardingSubtitle3": {
         "type": "text",
         "description": "Onboarding page 3 subtitle"
     },
     "skip": "Skip",
-    "previous": "Previous",
-    "next": "Next",
-    "submit": "Submit",
     "@skip": {
         "type": "text",
         "description": "Skip the onboarding"
     },
+    "previous": "Previous",
     "@previous": {
         "type": "text",
         "description": "Go to the previous onboarding page"
     },
+    "next": "Next",
     "@next": {
         "type": "text",
         "description": "Go to the next onboarding page"
     },
+    "submit": "Submit",
     "@submit": {
         "type": "text",
         "description": "Submit the onboarding"
@@ -114,11 +119,6 @@
     "@phoneNumberEmptyError": {
         "type": "text",
         "description": "Error message for empty phone number field"
-    },
-    "phoneNumberLengthError": "Phone Number must be greater than 8 and less than 15.",
-    "@phoneNumberLengthError": {
-        "type": "text",
-        "description": "Error message for phone number length validation"
     },
     "termsOfService": "Terms of Services",
     "@termsOfService": {

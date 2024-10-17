@@ -103,6 +103,12 @@ abstract class AppLocalizations {
   /// **'Hello, World! English'**
   String get helloWorld;
 
+  /// A app name
+  ///
+  /// In en, this message translates to:
+  /// **'FLutter Basic Template'**
+  String get appName;
+
   /// A greeting message
   ///
   /// In en, this message translates to:
@@ -234,12 +240,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Phone Number cannot be empty.'**
   String get phoneNumberEmptyError;
-
-  /// Validation message for incorrect phone number length
-  ///
-  /// In en, this message translates to:
-  /// **'Phone Number must be greater than 8 and less than 15'**
-  String get phoneNumberLengthError;
 
   /// Link text for Terms of Services
   ///
@@ -378,6 +378,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Phone Number can not be empty'**
   String get phoneNumberCannotBeEmpty;
+
+  /// Validation message for incorrect phone number length
+  ///
+  /// In en, this message translates to:
+  /// **'Phone Number must be greater than 8 and less than 15'**
+  String get phoneNumberLengthError;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
