@@ -32,10 +32,10 @@ class _MyDashboardState extends State<MyDashboard> {
           _currentIndex = index;
         },
         destinations: [
-          const NavigationDestination(
-            selectedIcon: PrimaryIcon(Icons.dashboard),
-            icon: Icon(Icons.dashboard),
-            label: 'Home',
+          NavigationDestination(
+            selectedIcon: const PrimaryIcon(Icons.dashboard),
+            icon: const Icon(Icons.dashboard),
+            label: context.lang.home,
           ),
           NavigationDestination(
             selectedIcon: const PrimaryIcon(Icons.settings),

@@ -239,5 +239,90 @@
     "@phoneNumberLengthError": {
         "type": "text",
         "description": "Validation message for incorrect phone number length"
+    },
+    "agreeToTerms": "By purchasing, you agree to our",
+    "@agreeToTerms": {
+        "type": "text",
+        "description": "Message indicating agreement to terms"
+    },
+    "termsOfServices": "Terms of Services",
+    "@termsOfServices": {
+        "type": "text",
+        "description": "Styled text for Terms of Services link"
+    },
+    "and": "and",
+    "@and": {
+        "type": "text",
+        "description": "Conjunction word used in the agreement text"
+    },
+    "home": "Home",
+    "@home": {
+        "type": "text",
+        "description": "Text for home link"
+    },
+    "privacyPolicyEnd": "Privacy Policy.",
+    "@privacyPolicyEnd": {
+        "type": "text",
+        "description": "Styled text for Privacy Policy link, indicating the last word"
+    },
+    "nameValidationEmpty": "Name can not be empty",
+    "@nameValidationEmpty": {
+        "type": "text",
+        "description": "Validation message for an empty name field"
+    },
+    "nameValidationLength": "Name must be greater than 3 characters",
+    "@nameValidationLength": {
+        "type": "text",
+        "description": "Validation message for name length"
+    },
+    "emailValidationEmpty": "Email can not be empty",
+    "@emailValidationEmpty": {
+        "type": "text",
+        "description": "Validation message for an empty email field"
+    },
+    "emailValidationInvalid": "Please enter a valid email address",
+    "@emailValidationInvalid": {
+        "type": "text",
+        "description": "Validation message for invalid email format"
+    },
+    "phoneNumberValidationEmpty": "Phone Number can not be empty",
+    "@phoneNumberValidationEmpty": {
+        "type": "text",
+        "description": "Validation message for an empty phone number field"
+    },
+    "phoneNumberValidationLength": "Phone Number must be greater than 8 and less than 15 characters",
+    "@phoneNumberValidationLength": {
+        "type": "text",
+        "description": "Validation message for phone number length"
+    },
+    "light": "Light",
+    "@light": {
+        "type": "text",
+        "description": "Option for light theme"
+    },
+    "dark": "Dark",
+    "@dark": {
+        "type": "text",
+        "description": "Option for dark theme"
+    },
+    "system": "System",
+    "@system": {
+        "type": "text",
+        "description": "Option for system theme"
+    },
+    "deleteMyAccount": "Delete My Account",
+    "@deleteMyAccount": {
+        "type": "text",
+        "description": "Option to delete the account"
+    },
+    "logout": "Logout",
+    "@logout": {
+        "type": "text",
+        "description": "Option to log out"
+    },
+    "buttonPressCount": "You have pushed the button this many times:",
+    "@buttonPressCount": {
+        "type": "text",
+        "description": "Message displaying the number of times a button has been pressed"
     }
 }

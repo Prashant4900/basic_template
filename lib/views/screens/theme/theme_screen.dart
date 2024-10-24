@@ -21,7 +21,7 @@ class MyThemeScreen extends StatelessWidget {
                 verticalMargin12,
                 ListTile(
                   contentPadding: EdgeInsets.zero,
-                  title: const Text('Light'),
+                  title: Text(context.lang.light),
                   leading: const Icon(Icons.light_mode),
                   trailing: state.themeMode == ThemeMode.light
                       ? const Icon(Icons.check)
@@ -31,7 +31,7 @@ class MyThemeScreen extends StatelessWidget {
                 ),
                 ListTile(
                   contentPadding: EdgeInsets.zero,
-                  title: const Text('Dark'),
+                  title: Text(context.lang.dark),
                   leading: const Icon(Icons.dark_mode),
                   trailing: state.themeMode == ThemeMode.dark
                       ? const Icon(Icons.check)
@@ -41,7 +41,7 @@ class MyThemeScreen extends StatelessWidget {
                 ),
                 ListTile(
                   contentPadding: EdgeInsets.zero,
-                  title: const Text('System'),
+                  title: Text(context.lang.system),
                   leading: const Icon(Icons.contrast),
                   trailing: state.themeMode == ThemeMode.system
                       ? const Icon(Icons.check)

@@ -384,6 +384,108 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Phone Number must be greater than 8 and less than 15'**
   String get phoneNumberLengthError;
+
+  /// Message indicating agreement to terms
+  ///
+  /// In en, this message translates to:
+  /// **'By purchasing, you agree to our'**
+  String get agreeToTerms;
+
+  /// Styled text for Terms of Services link
+  ///
+  /// In en, this message translates to:
+  /// **'Terms of Services'**
+  String get termsOfServices;
+
+  /// Conjunction word used in the agreement text
+  ///
+  /// In en, this message translates to:
+  /// **'and'**
+  String get and;
+
+  /// Text for home link
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get home;
+
+  /// Styled text for Privacy Policy link, indicating the last word
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy Policy.'**
+  String get privacyPolicyEnd;
+
+  /// Validation message for an empty name field
+  ///
+  /// In en, this message translates to:
+  /// **'Name can not be empty'**
+  String get nameValidationEmpty;
+
+  /// Validation message for name length
+  ///
+  /// In en, this message translates to:
+  /// **'Name must be greater than 3 characters'**
+  String get nameValidationLength;
+
+  /// Validation message for an empty email field
+  ///
+  /// In en, this message translates to:
+  /// **'Email can not be empty'**
+  String get emailValidationEmpty;
+
+  /// Validation message for invalid email format
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid email address'**
+  String get emailValidationInvalid;
+
+  /// Validation message for an empty phone number field
+  ///
+  /// In en, this message translates to:
+  /// **'Phone Number can not be empty'**
+  String get phoneNumberValidationEmpty;
+
+  /// Validation message for phone number length
+  ///
+  /// In en, this message translates to:
+  /// **'Phone Number must be greater than 8 and less than 15 characters'**
+  String get phoneNumberValidationLength;
+
+  /// Option for light theme
+  ///
+  /// In en, this message translates to:
+  /// **'Light'**
+  String get light;
+
+  /// Option for dark theme
+  ///
+  /// In en, this message translates to:
+  /// **'Dark'**
+  String get dark;
+
+  /// Option for system theme
+  ///
+  /// In en, this message translates to:
+  /// **'System'**
+  String get system;
+
+  /// Option to delete the account
+  ///
+  /// In en, this message translates to:
+  /// **'Delete My Account'**
+  String get deleteMyAccount;
+
+  /// Option to log out
+  ///
+  /// In en, this message translates to:
+  /// **'Logout'**
+  String get logout;
+
+  /// Message displaying the number of times a button has been pressed
+  ///
+  /// In en, this message translates to:
+  /// **'You have pushed the button this many times:'**
+  String get buttonPressCount;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

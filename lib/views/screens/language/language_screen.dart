@@ -24,14 +24,14 @@ class MyLanguageScreen extends StatelessWidget {
                 onTap: () => context.read<LanguageCubit>().changeLanguage('en'),
               ),
               ListTile(
-                title: const Text('Spanish'),
+                title: const Text('Española'),
                 trailing: state.locale == const Locale('es')
                     ? const Icon(Icons.check)
                     : emptyWidget,
                 onTap: () => context.read<LanguageCubit>().changeLanguage('es'),
               ),
               ListTile(
-                title: const Text('Hindi'),
+                title: const Text('हिंदी'),
                 trailing: state.locale == const Locale('hi')
                     ? const Icon(Icons.check)
                     : emptyWidget,

@@ -66,8 +66,8 @@ class _MyRegistrationScreenState extends State<MyRegistrationScreen> {
               detail: context.lang.name,
               iconData: Icons.person,
               validation: (value) {
-                if (value!.isEmpty) return 'Name can not be empty';
-                if (value.length < 3) return 'Name must be greater then 3 char';
+                if (value!.isEmpty) return context.lang.nameCannotBeEmpty;
+                if (value.length < 3) return context.lang.nameLengthError;
                 return null;
               },
             ),
@@ -77,12 +77,12 @@ class _MyRegistrationScreenState extends State<MyRegistrationScreen> {
               detail: context.lang.email,
               iconData: Icons.email,
               validation: (value) {
-                if (value!.isEmpty) return 'Email can not be empty';
+                if (value!.isEmpty) return context.lang.emailEmptyError;
                 final emailRegExp = RegExp(
                   r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$',
                 );
                 if (!emailRegExp.hasMatch(value)) {
-                  return 'Please enter a valid email address';
+                  return context.lang.emailValidationInvalid;
                 }
                 return null;
               },
@@ -93,16 +93,18 @@ class _MyRegistrationScreenState extends State<MyRegistrationScreen> {
               detail: context.lang.phoneNumber,
               iconData: Icons.phone,
               validation: (value) {
-                if (value!.isEmpty) return 'Please Number can not be empty';
+                if (value!.isEmpty) {
+                  return context.lang.phoneNumberCannotBeEmpty;
+                }
                 if (value.length <= 8 && value.length >= 15) {
-                  return 'Phone Number must be greater than 8 and less than 15';
+                  return context.lang.phoneNumberLengthError;
                 }
                 return null;
               },
             ),
             const Spacer(),
             CustomElevatedButton(
-              label: 'Submit',
+              label: context.lang.submit,
               onPressed: () async {
                 if (_formKey.currentState!.validate()) {
                   await AppPrefHelper.setDisplayName(
@@ -120,11 +122,11 @@ class _MyRegistrationScreenState extends State<MyRegistrationScreen> {
               text: TextSpan(
                 style: Theme.of(context).textTheme.bodySmall,
                 children: [
-                  const TextSpan(
-                    text: 'By purchasing, you agree to our ',
+                  TextSpan(
+                    text: '${context.lang.agreeToTerms} ',
                   ),
                   TextSpan(
-                    text: 'Terms of Services',
+                    text: context.lang.termsOfService,
                     style: const TextStyle(
                       decoration: TextDecoration.underline,
                       fontWeight: FontWeight.bold,
@@ -134,9 +136,9 @@ class _MyRegistrationScreenState extends State<MyRegistrationScreen> {
                         AppLogger.info('Terms of Services');
                       },
                   ),
-                  const TextSpan(text: ' and '),
+                  TextSpan(text: ' ${context.lang.and} '),
                   TextSpan(
-                    text: 'Privacy Policy.',
+                    text: context.lang.privacyPolicyEnd,
                     style: const TextStyle(
                       decoration: TextDecoration.underline,
                       fontWeight: FontWeight.bold,

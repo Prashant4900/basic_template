@@ -1,3 +1,4 @@
+import 'package:basic_template/l10n/l10n.dart';
 import 'package:basic_template/routes/routers.dart';
 import 'package:basic_template/views/components/body_widget.dart';
 import 'package:basic_template/views/components/header.dart';
@@ -11,22 +12,22 @@ class MyAccountDetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: headerNav(context, title: 'Account Detail'),
+      appBar: headerNav(context, title: context.lang.accountDetail),
       body: BodyWidget(
         child: Column(
           children: [
             SettingTileWidget(
-              title: 'Update Details',
+              title: context.lang.updateDetails,
               leadingIcon: Icons.person,
               onTap: () => context.push(MyRoutes.updateDetail),
             ),
             SettingTileWidget(
-              title: 'Logout',
+              title: context.lang.logout,
               leadingIcon: Icons.logout,
               onTap: () => context.pushAndRemoveAll(MyRoutes.registration),
             ),
             SettingTileWidget(
-              title: 'Delete My Account',
+              title: context.lang.deleteMyAccount,
               leadingIcon: Icons.delete_forever,
               onTap: () => context.pushAndRemoveAll(MyRoutes.registration),
             ),

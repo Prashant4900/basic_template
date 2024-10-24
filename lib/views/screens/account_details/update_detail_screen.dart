@@ -1,3 +1,4 @@
+import 'package:basic_template/l10n/l10n.dart';
 import 'package:basic_template/views/components/header.dart';
 import 'package:flutter/material.dart';
 
@@ -7,7 +8,7 @@ class MyUpdateDetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: headerNav(context, title: 'Update details'),
+      appBar: headerNav(context, title: context.lang.updateDetails),
     );
   }
 }

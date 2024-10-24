@@ -149,4 +149,55 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get phoneNumberLengthError => 'Phone Number must be greater than 8 and less than 15';
+
+  @override
+  String get agreeToTerms => 'By purchasing, you agree to our';
+
+  @override
+  String get termsOfServices => 'Terms of Services';
+
+  @override
+  String get and => 'and';
+
+  @override
+  String get home => 'Home';
+
+  @override
+  String get privacyPolicyEnd => 'Privacy Policy.';
+
+  @override
+  String get nameValidationEmpty => 'Name can not be empty';
+
+  @override
+  String get nameValidationLength => 'Name must be greater than 3 characters';
+
+  @override
+  String get emailValidationEmpty => 'Email can not be empty';
+
+  @override
+  String get emailValidationInvalid => 'Please enter a valid email address';
+
+  @override
+  String get phoneNumberValidationEmpty => 'Phone Number can not be empty';
+
+  @override
+  String get phoneNumberValidationLength => 'Phone Number must be greater than 8 and less than 15 characters';
+
+  @override
+  String get light => 'Light';
+
+  @override
+  String get dark => 'Dark';
+
+  @override
+  String get system => 'System';
+
+  @override
+  String get deleteMyAccount => 'Delete My Account';
+
+  @override
+  String get logout => 'Logout';
+
+  @override
+  String get buttonPressCount => 'You have pushed the button this many times:';
 }

@@ -10,7 +10,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get helloWorld => '¡Hola, Mundo! Español';
 
   @override
-  String get appName => 'FLutter Basic Template';
+  String get appName => 'Plantilla Básica de Flutter';
 
   @override
   String get hi => 'Hola';
@@ -19,25 +19,25 @@ class AppLocalizationsEs extends AppLocalizations {
   String get selectLanguage => 'Seleccionar idioma';
 
   @override
-  String get onboardingTitle1 => 'Bienvenido a nuestra aplicación de mensajes de libertad';
+  String get onboardingTitle1 => 'Bienvenido a nuestra \naplicación de mensajería libre';
 
   @override
-  String get onboardingSubtitle1 => 'Habla libremente con cualquier persona en tu lengua materna.';
+  String get onboardingSubtitle1 => 'Habla libremente con cualquier persona \nen tu idioma nativo.';
 
   @override
-  String get onboardingTitle2 => 'Bienvenido a nuestra aplicación de mensajes de libertad 1';
+  String get onboardingTitle2 => 'Bienvenido a nuestra \naplicación de mensajería libre 1';
 
   @override
-  String get onboardingSubtitle2 => 'Habla libremente con cualquier persona en tu lengua materna.';
+  String get onboardingSubtitle2 => 'Habla libremente con cualquier persona \nen tu idioma nativo.';
 
   @override
-  String get onboardingTitle3 => 'Bienvenido a nuestra aplicación de mensajes de libertad 2';
+  String get onboardingTitle3 => 'Bienvenido a nuestra \naplicación de mensajería libre 2';
 
   @override
-  String get onboardingSubtitle3 => 'Habla libremente con cualquier persona en tu lengua materna.';
+  String get onboardingSubtitle3 => 'Habla libremente con cualquier persona \nen tu idioma nativo.';
 
   @override
-  String get skip => 'Saltar';
+  String get skip => 'Omitir';
 
   @override
   String get previous => 'Anterior';
@@ -52,7 +52,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get enterDetails => 'Ingresar detalles';
 
   @override
-  String get welcomeMessage => '¡Bienvenido! Por favor, ingrese su nombre, correo electrónico y número de teléfono para completar su registro y continuar usando la aplicación.';
+  String get welcomeMessage => '¡Bienvenido! Por favor ingresa tu nombre, correo electrónico y número de teléfono para completar tu registro y continuar en la aplicación.';
 
   @override
   String get name => 'Nombre';
@@ -73,16 +73,16 @@ class AppLocalizationsEs extends AppLocalizations {
   String get emailEmptyError => 'El correo electrónico no puede estar vacío.';
 
   @override
-  String get emailInvalidError => 'Por favor, ingrese una dirección de correo electrónico válida.';
+  String get emailInvalidError => 'Por favor ingresa una dirección de correo electrónico válida.';
 
   @override
   String get phoneNumberEmptyError => 'El número de teléfono no puede estar vacío.';
 
   @override
-  String get termsOfService => 'Términos de Servicio';
+  String get termsOfService => 'Términos de servicio';
 
   @override
-  String get privacyPolicy => 'Política de Privacidad';
+  String get privacyPolicy => 'Política de privacidad';
 
   @override
   String get setting => 'Configuración';
@@ -121,13 +121,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get versionInfo => '1.0.1 (17)';
 
   @override
-  String get accountDetail => 'Detalles de la cuenta';
+  String get accountDetail => 'Detalle de la cuenta';
 
   @override
   String get updateDetails => 'Actualizar detalles';
 
   @override
-  String get updateProfileMessage => 'Actualiza tu nombre, correo electrónico y número de teléfono para mantener tu perfil actualizado y seguir usando la aplicación.';
+  String get updateProfileMessage => 'Actualiza tu nombre, correo electrónico y número de teléfono para mantener tu perfil actualizado y continuar usando la aplicación.';
 
   @override
   String get update => 'Actualizar';
@@ -142,11 +142,62 @@ class AppLocalizationsEs extends AppLocalizations {
   String get emailCannotBeEmpty => 'El correo electrónico no puede estar vacío';
 
   @override
-  String get invalidEmail => 'Por favor, ingrese una dirección de correo electrónico válida';
+  String get invalidEmail => 'Por favor ingresa una dirección de correo electrónico válida';
 
   @override
   String get phoneNumberCannotBeEmpty => 'El número de teléfono no puede estar vacío';
 
   @override
-  String get phoneNumberLengthError => 'El número de teléfono debe tener más de 8 y menos de 15 caracteres';
+  String get phoneNumberLengthError => 'El número de teléfono debe ser mayor de 8 y menor de 15';
+
+  @override
+  String get agreeToTerms => 'Al comprar, aceptas nuestros';
+
+  @override
+  String get termsOfServices => 'Términos de Servicio';
+
+  @override
+  String get and => 'y';
+
+  @override
+  String get home => 'Inicio';
+
+  @override
+  String get privacyPolicyEnd => 'Política de Privacidad.';
+
+  @override
+  String get nameValidationEmpty => 'El nombre no puede estar vacío';
+
+  @override
+  String get nameValidationLength => 'El nombre debe tener más de 3 caracteres';
+
+  @override
+  String get emailValidationEmpty => 'El correo electrónico no puede estar vacío';
+
+  @override
+  String get emailValidationInvalid => 'Por favor, introduce una dirección de correo electrónico válida';
+
+  @override
+  String get phoneNumberValidationEmpty => 'El número de teléfono no puede estar vacío';
+
+  @override
+  String get phoneNumberValidationLength => 'El número de teléfono debe ser mayor de 8 y menor de 15 caracteres';
+
+  @override
+  String get light => 'Día';
+
+  @override
+  String get dark => 'Noche';
+
+  @override
+  String get system => 'Sistema';
+
+  @override
+  String get deleteMyAccount => 'Eliminar mi cuenta';
+
+  @override
+  String get logout => 'Cerrar sesión';
+
+  @override
+  String get buttonPressCount => 'Has pulsado el botón tantas veces:';
 }

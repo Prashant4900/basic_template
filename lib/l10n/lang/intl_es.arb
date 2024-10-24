@@ -5,6 +5,11 @@
         "type": "text",
         "description": "Un mensaje de hola mundo"
     },
+    "appName": "Plantilla Básica de Flutter",
+    "@appName": {
+        "type": "text",
+        "description": "Nombre de la aplicación"
+    },
     "hi": "Hola",
     "@hi": {
         "type": "text",
@@ -15,62 +20,62 @@
         "type": "text",
         "description": "Un aviso para seleccionar el idioma"
     },
-    "onboardingTitle1": "Bienvenido a nuestra aplicación de mensajes de libertad",
-    "onboardingSubtitle1": "Habla libremente con cualquier persona en tu lengua materna.",
-    "onboardingTitle2": "Bienvenido a nuestra aplicación de mensajes de libertad 1",
-    "onboardingSubtitle2": "Habla libremente con cualquier persona en tu lengua materna.",
-    "onboardingTitle3": "Bienvenido a nuestra aplicación de mensajes de libertad 2",
-    "onboardingSubtitle3": "Habla libremente con cualquier persona en tu lengua materna.",
+    "onboardingTitle1": "Bienvenido a nuestra \naplicación de mensajería libre",
     "@onboardingTitle1": {
         "type": "text",
-        "description": "Título de la página de incorporación 1"
+        "description": "Título de la página de introducción 1"
     },
+    "onboardingSubtitle1": "Habla libremente con cualquier persona \nen tu idioma nativo.",
     "@onboardingSubtitle1": {
         "type": "text",
-        "description": "Subtítulo de la página de incorporación 1"
+        "description": "Subtítulo de la página de introducción 1"
     },
+    "onboardingTitle2": "Bienvenido a nuestra \naplicación de mensajería libre 1",
     "@onboardingTitle2": {
         "type": "text",
-        "description": "Título de la página de incorporación 2"
+        "description": "Título de la página de introducción 2"
     },
+    "onboardingSubtitle2": "Habla libremente con cualquier persona \nen tu idioma nativo.",
     "@onboardingSubtitle2": {
         "type": "text",
-        "description": "Subtítulo de la página de incorporación 2"
+        "description": "Subtítulo de la página de introducción 2"
     },
+    "onboardingTitle3": "Bienvenido a nuestra \naplicación de mensajería libre 2",
     "@onboardingTitle3": {
         "type": "text",
-        "description": "Título de la página de incorporación 3"
+        "description": "Título de la página de introducción 3"
     },
+    "onboardingSubtitle3": "Habla libremente con cualquier persona \nen tu idioma nativo.",
     "@onboardingSubtitle3": {
         "type": "text",
-        "description": "Subtítulo de la página de incorporación 3"
+        "description": "Subtítulo de la página de introducción 3"
     },
-    "skip": "Saltar",
-    "previous": "Anterior",
-    "next": "Siguiente",
-    "submit": "Enviar",
+    "skip": "Omitir",
     "@skip": {
         "type": "text",
-        "description": "Saltar la incorporación"
+        "description": "Omitir la introducción"
     },
+    "previous": "Anterior",
     "@previous": {
         "type": "text",
-        "description": "Ir a la página de incorporación anterior"
+        "description": "Ir a la página de introducción anterior"
     },
+    "next": "Siguiente",
     "@next": {
         "type": "text",
-        "description": "Ir a la página de incorporación siguiente"
+        "description": "Ir a la página de introducción siguiente"
     },
+    "submit": "Enviar",
     "@submit": {
         "type": "text",
-        "description": "Enviar la incorporación"
+        "description": "Enviar la introducción"
     },
     "enterDetails": "Ingresar detalles",
     "@enterDetails": {
         "type": "text",
         "description": "Título para ingresar detalles de registro"
     },
-    "welcomeMessage": "¡Bienvenido! Por favor, ingrese su nombre, correo electrónico y número de teléfono para completar su registro y continuar usando la aplicación.",
+    "welcomeMessage": "¡Bienvenido! Por favor ingresa tu nombre, correo electrónico y número de teléfono para completar tu registro y continuar en la aplicación.",
     "@welcomeMessage": {
         "type": "text",
         "description": "Instrucciones para ingresar detalles de registro"
@@ -93,37 +98,37 @@
     "nameEmptyError": "El nombre no puede estar vacío.",
     "@nameEmptyError": {
         "type": "text",
-        "description": "Mensaje de error para campo de nombre vacío"
+        "description": "Mensaje de error para el campo de nombre vacío"
     },
     "nameLengthError": "El nombre debe tener más de 3 caracteres.",
     "@nameLengthError": {
         "type": "text",
-        "description": "Mensaje de error para validación de longitud de nombre"
+        "description": "Mensaje de error para la validación de la longitud del nombre"
     },
     "emailEmptyError": "El correo electrónico no puede estar vacío.",
     "@emailEmptyError": {
         "type": "text",
-        "description": "Mensaje de error para campo de correo electrónico vacío"
+        "description": "Mensaje de error para el campo de correo electrónico vacío"
     },
-    "emailInvalidError": "Por favor, ingrese una dirección de correo electrónico válida.",
+    "emailInvalidError": "Por favor ingresa una dirección de correo electrónico válida.",
     "@emailInvalidError": {
         "type": "text",
-        "description": "Mensaje de error para dirección de correo electrónico no válida"
+        "description": "Mensaje de error para la dirección de correo electrónico no válida"
     },
     "phoneNumberEmptyError": "El número de teléfono no puede estar vacío.",
     "@phoneNumberEmptyError": {
         "type": "text",
-        "description": "Mensaje de error para campo de número de teléfono vacío"
+        "description": "Mensaje de error para el campo de número de teléfono vacío"
     },
-    "termsOfService": "Términos de Servicio",
+    "termsOfService": "Términos de servicio",
     "@termsOfService": {
         "type": "text",
-        "description": "Texto del enlace para los Términos de Servicio"
+        "description": "Texto del enlace para los términos de servicio"
     },
-    "privacyPolicy": "Política de Privacidad",
+    "privacyPolicy": "Política de privacidad",
     "@privacyPolicy": {
         "type": "text",
-        "description": "Texto del enlace para la Política de Privacidad"
+        "description": "Texto del enlace para la política de privacidad"
     },
     "setting": "Configuración",
     "@setting": {
@@ -133,7 +138,7 @@
     "general": "General",
     "@general": {
         "type": "text",
-        "description": "Título de sección para configuración general"
+        "description": "Título de la sección para la configuración general"
     },
     "accountDetails": "Detalles de la cuenta",
     "@accountDetails": {
@@ -153,7 +158,7 @@
     "info": "Información",
     "@info": {
         "type": "text",
-        "description": "Título de sección para configuración de información"
+        "description": "Título de la sección para la configuración de información"
     },
     "rateMyApp": "Califica mi aplicación",
     "@rateMyApp": {
@@ -183,22 +188,22 @@
     "versionInfo": "1.0.1 (17)",
     "@versionInfo": {
         "type": "text",
-        "description": "Subtítulo mostrando la versión actual de la aplicación"
+        "description": "Subtítulo que muestra la versión actual de la aplicación"
     },
-    "accountDetail": "Detalles de la cuenta",
+    "accountDetail": "Detalle de la cuenta",
     "@accountDetail": {
         "type": "text",
-        "description": "Título para la pantalla de detalles de la cuenta"
+        "description": "Título para la pantalla de detalle de la cuenta"
     },
     "updateDetails": "Actualizar detalles",
     "@updateDetails": {
         "type": "text",
-        "description": "Encabezado para actualizar detalles de la cuenta"
+        "description": "Encabezado para actualizar los detalles de la cuenta"
     },
-    "updateProfileMessage": "Actualiza tu nombre, correo electrónico y número de teléfono para mantener tu perfil actualizado y seguir usando la aplicación.",
+    "updateProfileMessage": "Actualiza tu nombre, correo electrónico y número de teléfono para mantener tu perfil actualizado y continuar usando la aplicación.",
     "@updateProfileMessage": {
         "type": "text",
-        "description": "Mensaje explicando el propósito del formulario de actualización"
+        "description": "Mensaje que explica el propósito del formulario de actualización"
     },
     "update": "Actualizar",
     "@update": {
@@ -208,31 +213,116 @@
     "nameCannotBeEmpty": "El nombre no puede estar vacío",
     "@nameCannotBeEmpty": {
         "type": "text",
-        "description": "Mensaje de validación para campo de nombre vacío"
+        "description": "Mensaje de validación para el campo de nombre vacío"
     },
     "nameTooShort": "El nombre debe tener más de 3 caracteres",
     "@nameTooShort": {
         "type": "text",
-        "description": "Mensaje de validación para nombre corto"
+        "description": "Mensaje de validación para un nombre corto"
     },
     "emailCannotBeEmpty": "El correo electrónico no puede estar vacío",
     "@emailCannotBeEmpty": {
         "type": "text",
-        "description": "Mensaje de validación para campo de correo electrónico vacío"
+        "description": "Mensaje de validación para el campo de correo electrónico vacío"
     },
-    "invalidEmail": "Por favor, ingrese una dirección de correo electrónico válida",
+    "invalidEmail": "Por favor ingresa una dirección de correo electrónico válida",
     "@invalidEmail": {
         "type": "text",
-        "description": "Mensaje de validación para formato de correo electrónico no válido"
+        "description": "Mensaje de validación para un formato de correo electrónico no válido"
     },
     "phoneNumberCannotBeEmpty": "El número de teléfono no puede estar vacío",
     "@phoneNumberCannotBeEmpty": {
         "type": "text",
-        "description": "Mensaje de validación para campo de número de teléfono vacío"
+        "description": "Mensaje de validación para el campo de número de teléfono vacío"
     },
-    "phoneNumberLengthError": "El número de teléfono debe tener más de 8 y menos de 15 caracteres",
+    "phoneNumberLengthError": "El número de teléfono debe ser mayor de 8 y menor de 15",
     "@phoneNumberLengthError": {
         "type": "text",
-        "description": "Mensaje de validación para longitud incorrecta de número de teléfono"
+        "description": "Mensaje de validación para la longitud incorrecta del número de teléfono"
+    },
+    "agreeToTerms": "Al comprar, aceptas nuestros",
+    "@agreeToTerms": {
+        "type": "text",
+        "description": "Mensaje que indica la aceptación de los términos"
+    },
+    "termsOfServices": "Términos de Servicio",
+    "@termsOfServices": {
+        "type": "text",
+        "description": "Texto estilizado para el enlace de Términos de Servicio"
+    },
+    "and": "y",
+    "@and": {
+        "type": "text",
+        "description": "Palabra de conjunción utilizada en el texto de acuerdo"
+    },
+    "home": "Inicio",
+    "@home": {
+        "type": "text",
+        "description": "Texto para el enlace de inicio"
+    },
+    "privacyPolicyEnd": "Política de Privacidad.",
+    "@privacyPolicyEnd": {
+        "type": "text",
+        "description": "Texto estilizado para el enlace de Política de Privacidad, indicando la última palabra"
+    },
+    "nameValidationEmpty": "El nombre no puede estar vacío",
+    "@nameValidationEmpty": {
+        "type": "text",
+        "description": "Mensaje de validación para un campo de nombre vacío"
+    },
+    "nameValidationLength": "El nombre debe tener más de 3 caracteres",
+    "@nameValidationLength": {
+        "type": "text",
+        "description": "Mensaje de validación para la longitud del nombre"
+    },
+    "emailValidationEmpty": "El correo electrónico no puede estar vacío",
+    "@emailValidationEmpty": {
+        "type": "text",
+        "description": "Mensaje de validación para un campo de correo electrónico vacío"
+    },
+    "emailValidationInvalid": "Por favor, introduce una dirección de correo electrónico válida",
+    "@emailValidationInvalid": {
+        "type": "text",
+        "description": "Mensaje de validación para formato de correo electrónico inválido"
+    },
+    "phoneNumberValidationEmpty": "El número de teléfono no puede estar vacío",
+    "@phoneNumberValidationEmpty": {
+        "type": "text",
+        "description": "Mensaje de validación para un campo de número de teléfono vacío"
+    },
+    "phoneNumberValidationLength": "El número de teléfono debe ser mayor de 8 y menor de 15 caracteres",
+    "@phoneNumberValidationLength": {
+        "type": "text",
+        "description": "Mensaje de validación para la longitud del número de teléfono"
+    },
+    "light": "Día",
+    "@light": {
+        "type": "text",
+        "description": "Opción para el tema claro"
+    },
+    "dark": "Noche",
+    "@dark": {
+        "type": "text",
+        "description": "Opción para el tema oscuro"
+    },
+    "system": "Sistema",
+    "@system": {
+        "type": "text",
+        "description": "Opción para el tema del sistema"
+    },
+    "deleteMyAccount": "Eliminar mi cuenta",
+    "@deleteMyAccount": {
+        "type": "text",
+        "description": "Opción para eliminar la cuenta"
+    },
+    "logout": "Cerrar sesión",
+    "@logout": {
+        "type": "text",
+        "description": "Opción para cerrar sesión"
+    },
+    "buttonPressCount": "Has pulsado el botón tantas veces:",
+    "@buttonPressCount": {
+        "type": "text",
+        "description": "Mensaje que muestra cuántas veces se ha pulsado el botón"
     }
 }
