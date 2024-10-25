@@ -3,11 +3,13 @@ import 'package:basic_template/l10n/l10n.dart';
 import 'package:basic_template/routes/routers.dart';
 import 'package:basic_template/services/app_logger.dart';
 import 'package:basic_template/services/app_prefs.dart';
+import 'package:basic_template/utility/regex.dart';
 import 'package:basic_template/views/components/body_widget.dart';
 import 'package:basic_template/views/components/buttons.dart';
 import 'package:basic_template/views/components/custom_text_field.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 
 class MyRegistrationScreen extends StatefulWidget {
@@ -47,53 +49,57 @@ class _MyRegistrationScreenState extends State<MyRegistrationScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            verticalMargin20,
+            SizedBox(height: kToolbarHeight.h),
             Text(
               context.lang.enterDetails,
               style: Theme.of(context)
                   .textTheme
-                  .titleLarge!
+                  .headlineLarge!
                   .copyWith(fontWeight: FontWeight.w600),
             ),
-            const SizedBox(height: 8),
             Text(
               context.lang.welcomeMessage,
               style: Theme.of(context).textTheme.bodyMedium,
             ),
             verticalMargin48,
             CustomTextField(
-              nameController: _nameController,
-              detail: context.lang.name,
+              controller: _nameController,
+              hintText: context.lang.name,
               iconData: Icons.person,
               validation: (value) {
-                if (value!.isEmpty) return context.lang.nameCannotBeEmpty;
+                if (value == null || value.isEmpty) {
+                  return context.lang.nameCannotBeEmpty;
+                }
+
                 if (value.length < 3) return context.lang.nameLengthError;
                 return null;
               },
             ),
             verticalMargin24,
             CustomTextField(
-              nameController: _emailController,
-              detail: context.lang.email,
+              controller: _emailController,
+              hintText: context.lang.email,
               iconData: Icons.email,
               validation: (value) {
-                if (value!.isEmpty) return context.lang.emailEmptyError;
-                final emailRegExp = RegExp(
-                  r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$',
-                );
+                if (value == null || value.isEmpty) {
+                  return context.lang.emailEmptyError;
+                }
+
+                final emailRegExp = RegExp(MyRegex.emailRegex);
                 if (!emailRegExp.hasMatch(value)) {
                   return context.lang.emailValidationInvalid;
                 }
+
                 return null;
               },
             ),
             verticalMargin24,
             CustomTextField(
-              nameController: _phoneNumberController,
-              detail: context.lang.phoneNumber,
+              controller: _phoneNumberController,
+              hintText: context.lang.phoneNumber,
               iconData: Icons.phone,
               validation: (value) {
-                if (value!.isEmpty) {
+                if (value == null || value.isEmpty) {
                   return context.lang.phoneNumberCannotBeEmpty;
                 }
                 if (value.length <= 8 && value.length >= 15) {

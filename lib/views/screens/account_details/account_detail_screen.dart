@@ -1,5 +1,6 @@
 import 'package:basic_template/l10n/l10n.dart';
 import 'package:basic_template/routes/routers.dart';
+import 'package:basic_template/services/app_prefs.dart';
 import 'package:basic_template/views/components/body_widget.dart';
 import 'package:basic_template/views/components/header.dart';
 import 'package:basic_template/views/components/tile_widgets.dart';
@@ -24,12 +25,22 @@ class MyAccountDetailScreen extends StatelessWidget {
             SettingTileWidget(
               title: context.lang.logout,
               leadingIcon: Icons.logout,
-              onTap: () => context.pushAndRemoveAll(MyRoutes.registration),
+              onTap: () async {
+                await AppPref.remove(AppPrefKey.displayName).whenComplete(() {
+                  if (!context.mounted) return;
+                  context.pushReplacement(MyRoutes.registration);
+                });
+              },
             ),
             SettingTileWidget(
               title: context.lang.deleteMyAccount,
               leadingIcon: Icons.delete_forever,
-              onTap: () => context.pushAndRemoveAll(MyRoutes.registration),
+              onTap: () async {
+                await AppPref.remove(AppPrefKey.displayName).whenComplete(() {
+                  if (!context.mounted) return;
+                  context.pushReplacement(MyRoutes.registration);
+                });
+              },
             ),
           ],
         ),

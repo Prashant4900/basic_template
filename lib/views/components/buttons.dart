@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomElevatedButton extends StatelessWidget {
   const CustomElevatedButton({
@@ -18,7 +19,7 @@ class CustomElevatedButton extends StatelessWidget {
         foregroundColor: Theme.of(context).colorScheme.onPrimary,
         minimumSize: const Size(double.infinity, kToolbarHeight),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8),
+          borderRadius: BorderRadius.circular(8.dm),
         ),
       ),
       onPressed: onPressed,

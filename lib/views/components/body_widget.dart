@@ -1,5 +1,6 @@
 import 'package:basic_template/common/dimensions.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 @immutable
 class BodyWidget extends StatelessWidget {
@@ -46,11 +47,11 @@ class CustomProgressBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        width: 100,
-        height: 100,
+        width: 100.w,
+        height: 100.h,
         decoration: BoxDecoration(
           color: Theme.of(context).colorScheme.primaryContainer.withOpacity(.8),
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(12.dm),
         ),
         child: Center(
           child: CircularProgressIndicator(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SettingTileWidget extends StatelessWidget {
   const SettingTileWidget({
@@ -26,7 +27,7 @@ class SettingTileWidget extends StatelessWidget {
     return ListTile(
       contentPadding: EdgeInsets.zero,
       onTap: onTap,
-      leading: leading ?? Icon(leadingIcon, size: 28),
+      leading: leading ?? Icon(leadingIcon, size: 28.w),
       title: Text(
         title,
         style: Theme.of(context).textTheme.bodyLarge,
