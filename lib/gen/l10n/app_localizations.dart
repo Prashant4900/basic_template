@@ -106,7 +106,7 @@ abstract class AppLocalizations {
   /// A app name
   ///
   /// In en, this message translates to:
-  /// **'FLutter Basic Template'**
+  /// **'Flutter Basic Template'**
   String get appName;
 
   /// A greeting message

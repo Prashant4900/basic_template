@@ -5,7 +5,7 @@
         "type": "text",
         "description": "A hello world message"
     },
-    "appName": "FLutter Basic Template",
+    "appName": "Flutter Basic Template",
     "@appName": {
         "type": "text",
         "description": "A app name"

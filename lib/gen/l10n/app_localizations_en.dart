@@ -10,7 +10,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get helloWorld => 'Hello, World! English';
 
   @override
-  String get appName => 'FLutter Basic Template';
+  String get appName => 'Flutter Basic Template';
 
   @override
   String get hi => 'Hi';
