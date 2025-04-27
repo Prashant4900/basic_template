@@ -179,5 +179,15 @@
     "homeScreenLabel": "Home Screen",
     "@homeScreenLabel": {
         "description": "Label text shown in the body of the Home screen"
+    },
+    "dynamicColor": "Dynamic Color",
+    "@dynamicColor": {
+        "type": "text",
+        "description": "Dynamic Color"
+    },
+    "dynamicColorSubTitle": "Use dynamic adaptive color",
+    "@dynamicColorSubTitle": {
+        "type": "text",
+        "description": "Use dynamic adaptive color"
     }
 }

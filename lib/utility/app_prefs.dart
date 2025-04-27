@@ -7,7 +7,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 enum AppPrefKey {
   language('language'),
   theme('theme'),
-  displayName('displayName');
+  displayName('displayName'),
+  isDynamicColor('isDynamicColor'),
+  dynamicColor('dynamicColor');
 
   const AppPrefKey(this.name);
   final String name;
@@ -68,6 +70,27 @@ class AppPref {
 }
 
 class AppPrefHelper {
+  static Future<bool> setIsDynamicColor({required bool isDynamicColor}) async {
+    return AppPref.save(AppPrefKey.isDynamicColor, isDynamicColor);
+  }
+
+  static bool getIsDynamicColor() {
+    final isDynamicColor =
+        AppPref.get(AppPrefKey.isDynamicColor, false) as bool;
+    AppLogger.info('isDynamicColor: $isDynamicColor');
+    return isDynamicColor;
+  }
+
+  static Future<bool> setDynamicColor({required int dynamicColor}) async {
+    return AppPref.save(AppPrefKey.dynamicColor, dynamicColor);
+  }
+
+  static int getDynamicColor() {
+    final dynamicColor = AppPref.get(AppPrefKey.dynamicColor, 0) as int;
+    AppLogger.info('dynamicColor: $dynamicColor');
+    return dynamicColor;
+  }
+
   static Future<bool> setDisplayName({required String displayName}) async {
     return AppPref.save(AppPrefKey.displayName, displayName);
   }

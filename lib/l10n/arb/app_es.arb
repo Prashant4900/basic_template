@@ -179,5 +179,15 @@
     "homeScreenLabel": "Pantalla de inicio",
     "@homeScreenLabel": {
         "description": "Texto de la etiqueta mostrado en el cuerpo de la pantalla de inicio"
+    },
+    "dynamicColor": "Color Dinámico",
+    "@dynamicColor": {
+        "type": "text",
+        "description": "Dynamic Color"
+    },
+    "dynamicColorSubTitle": "Usar color adaptativo dinámico",
+    "@dynamicColorSubTitle": {
+        "type": "text",
+        "description": "Use dynamic adaptive color"
     }
 }

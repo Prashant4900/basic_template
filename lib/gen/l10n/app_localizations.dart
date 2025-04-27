@@ -364,6 +364,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Home Screen'**
   String get homeScreenLabel;
+
+  /// Dynamic Color
+  ///
+  /// In en, this message translates to:
+  /// **'Dynamic Color'**
+  String get dynamicColor;
+
+  /// Use dynamic adaptive color
+  ///
+  /// In en, this message translates to:
+  /// **'Use dynamic adaptive color'**
+  String get dynamicColorSubTitle;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

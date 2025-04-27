@@ -1,3 +1,5 @@
+import 'package:appwrite_app/core/extensions.dart';
+import 'package:appwrite_app/theme/themes.dart';
 import 'package:appwrite_app/utility/app_prefs.dart';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
@@ -16,5 +18,15 @@ class SettingCubit extends Cubit<SettingState> {
   Future<void> changeTheme(ThemeMode theme) async {
     await AppPrefHelper.saveThemeMode(theme);
     emit(state.copyWith(themeMode: theme, status: SettingStatus.success));
+  }
+
+  Future<void> toggleDynamicColor({required bool isDyanmicColor}) async {
+    await AppPrefHelper.setIsDynamicColor(isDynamicColor: isDyanmicColor);
+    emit(state.copyWith(isDynamicColor: isDyanmicColor));
+  }
+
+  Future<void> updateDyanmicColor(Color color) async {
+    await AppPrefHelper.setDynamicColor(dynamicColor: color.toARGB32());
+    emit(state.copyWith(dynamicColor: color));
   }
 }

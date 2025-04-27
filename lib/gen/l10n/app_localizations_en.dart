@@ -142,4 +142,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get homeScreenLabel => 'Home Screen';
+
+  @override
+  String get dynamicColor => 'Dynamic Color';
+
+  @override
+  String get dynamicColorSubTitle => 'Use dynamic adaptive color';
 }
