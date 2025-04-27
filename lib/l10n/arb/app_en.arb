@@ -1,0 +1,183 @@
+{
+    "@@locale": "en",
+    "registerNewAccountTitle": "Register a new account!",
+    "@registerNewAccountTitle": {
+        "description": "Title text shown in the AppBar of the SignUp screen"
+    },
+    "languageLabel": "Language",
+    "@languageLabel": {
+        "description": "Label for selecting the preferred language"
+    },
+    "selectLanguage": "Select your language",
+    "@selectLanguage": {
+        "description": "Label for selecting the preferred language"
+    },
+    "nameFieldLabel": "Name",
+    "@nameFieldLabel": {
+        "description": "Label for the Name input field"
+    },
+    "nameFieldHint": "Enter your name",
+    "@nameFieldHint": {
+        "description": "Hint text for the Name input field"
+    },
+    "emailFieldLabel": "Email",
+    "@emailFieldLabel": {
+        "description": "Label for the Email input field"
+    },
+    "emailFieldHint": "Enter your email",
+    "@emailFieldHint": {
+        "description": "Hint text for the Email input field"
+    },
+    "passwordFieldLabel": "Password",
+    "@passwordFieldLabel": {
+        "description": "Label for the Password input field"
+    },
+    "passwordFieldHint": "Enter your password",
+    "@passwordFieldHint": {
+        "description": "Hint text for the Password input field"
+    },
+    "signupButtonLabel": "Sign up",
+    "@signupButtonLabel": {
+        "description": "Label for the Sign Up button"
+    },
+    "orLabel": "OR",
+    "@orLabel": {
+        "description": "Label between Sign Up options indicating alternative methods"
+    },
+    "signupWithGoogleButtonLabel": "Sign up with Google",
+    "@signupWithGoogleButtonLabel": {
+        "description": "Label for the Sign Up with Google button"
+    },
+    "signupWithAppleButtonLabel": "Sign up with Apple",
+    "@signupWithAppleButtonLabel": {
+        "description": "Label for the Sign Up with Apple button"
+    },
+    "alreadyHaveAccountLabel": "Already have an account?",
+    "@alreadyHaveAccountLabel": {
+        "description": "Label prompting user if they already have an account"
+    },
+    "signinLinkLabel": "Sign in",
+    "@signinLinkLabel": {
+        "description": "Clickable Sign In text in Sign Up screen"
+    },
+    "welcomeBackTitle": "Welcome back!",
+    "@welcomeBackTitle": {
+        "description": "Title text shown in the AppBar of the Login screen"
+    },
+    "forgotPasswordButtonLabel": "Forgot password?",
+    "@forgotPasswordButtonLabel": {
+        "description": "Button text for Forgot Password"
+    },
+    "signinButtonLabel": "Sign in",
+    "@signinButtonLabel": {
+        "description": "Label for the Sign In button"
+    },
+    "signinWithGoogleButtonLabel": "Sign in with Google",
+    "@signinWithGoogleButtonLabel": {
+        "description": "Label for the Sign In with Google button"
+    },
+    "signinWithAppleButtonLabel": "Sign in with Apple",
+    "@signinWithAppleButtonLabel": {
+        "description": "Label for the Sign In with Apple button"
+    },
+    "dontHaveAccountLabel": "Do not have an account?",
+    "@dontHaveAccountLabel": {
+        "description": "Label prompting user if they don't have an account"
+    },
+    "signupLinkLabel": "Sign up",
+    "@signupLinkLabel": {
+        "description": "Clickable Sign Up text in Login screen"
+    },
+    "forgotPasswordTitle": "Forgot Password",
+    "@forgotPasswordTitle": {
+        "description": "Title text shown in the AppBar of the Forgot Password screen"
+    },
+    "forgotPasswordInstruction": "Enter the email address associated with your account and we’ll send you a link to reset your password.",
+    "@forgotPasswordInstruction": {
+        "description": "Instruction text shown below AppBar in Forgot Password screen"
+    },
+    "settingsTitle": "Settings",
+    "@settingsTitle": {
+        "description": "Title text shown in the AppBar of the Settings screen"
+    },
+    "settingsGeneralSection": "General",
+    "@settingsGeneralSection": {
+        "description": "Title for the General section in Settings screen"
+    },
+    "settingsAccountDetails": "Account details",
+    "@settingsAccountDetails": {
+        "description": "Label for Account details SettingTile"
+    },
+    "settingsLanguage": "Language",
+    "@settingsLanguage": {
+        "description": "Label for Language SettingTile"
+    },
+    "settingsTheme": "Theme",
+    "@settingsTheme": {
+        "description": "Label for Theme SettingTile"
+    },
+    "settingsInformationSection": "Information",
+    "@settingsInformationSection": {
+        "description": "Title for the Information section in Settings screen"
+    },
+    "settingsRateUs": "Rate us",
+    "@settingsRateUs": {
+        "description": "Label for Rate us SettingTile"
+    },
+    "settingsPrivacyPolicy": "Privacy policy",
+    "@settingsPrivacyPolicy": {
+        "description": "Label for Privacy policy SettingTile"
+    },
+    "settingsTermsAndConditions": "Terms and conditions",
+    "@settingsTermsAndConditions": {
+        "description": "Label for Terms and Conditions SettingTile"
+    },
+    "settingsVersion": "Version",
+    "@settingsVersion": {
+        "description": "Label for App Version SettingTile"
+    },
+    "settingsOtherSection": "Other",
+    "@settingsOtherSection": {
+        "description": "Title for the Other section in Settings screen"
+    },
+    "settingsLogout": "Logout",
+    "@settingsLogout": {
+        "description": "Label for Logout SettingTile"
+    },
+    "settingsDeleteAccount": "Delete account",
+    "@settingsDeleteAccount": {
+        "description": "Label for Delete Account SettingTile"
+    },
+    "themeScreenTitle": "Theme",
+    "@themeScreenTitle": {
+        "description": "Title shown in the AppBar of the theme selection screen"
+    },
+    "systemDefaultLabel": "System Default",
+    "@systemDefaultLabel": {
+        "description": "Option to use the system default theme"
+    },
+    "lightModeLabel": "Light Mode",
+    "@lightModeLabel": {
+        "description": "Option to select light mode"
+    },
+    "darkModeLabel": "Dark Mode",
+    "@darkModeLabel": {
+        "description": "Option to select dark mode"
+    },
+    "accountDetailsScreenTitle": "Account Details",
+    "@accountDetailsScreenTitle": {
+        "description": "Title shown in the AppBar of the Account Details screen"
+    },
+    "saveButtonLabel": "Save",
+    "@saveButtonLabel": {
+        "description": "Label for the Save button"
+    },
+    "homeScreenTitle": "Home",
+    "@homeScreenTitle": {
+        "description": "Title shown in the AppBar of the Home screen"
+    },
+    "homeScreenLabel": "Home Screen",
+    "@homeScreenLabel": {
+        "description": "Label text shown in the body of the Home screen"
+    }
+}

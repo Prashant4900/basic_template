@@ -7,7 +7,6 @@ import 'package:intl/intl.dart' as intl;
 
 import 'app_localizations_en.dart';
 import 'app_localizations_es.dart';
-import 'app_localizations_hi.dart';
 
 // ignore_for_file: type=lint
 
@@ -93,399 +92,278 @@ abstract class AppLocalizations {
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('en'),
-    Locale('es'),
-    Locale('hi')
+    Locale('es')
   ];
 
-  /// A hello world message
+  /// Title text shown in the AppBar of the SignUp screen
   ///
   /// In en, this message translates to:
-  /// **'Hello, World! English'**
-  String get helloWorld;
+  /// **'Register a new account!'**
+  String get registerNewAccountTitle;
 
-  /// A app name
-  ///
-  /// In en, this message translates to:
-  /// **'Flutter Basic Template'**
-  String get appName;
-
-  /// A greeting message
-  ///
-  /// In en, this message translates to:
-  /// **'Hi'**
-  String get hi;
-
-  /// A prompt to select the language
-  ///
-  /// In en, this message translates to:
-  /// **'Select Language'**
-  String get selectLanguage;
-
-  /// Onboarding page 1 title
-  ///
-  /// In en, this message translates to:
-  /// **'Welcome to our freedom \nmessaging app'**
-  String get onboardingTitle1;
-
-  /// Onboarding page 1 subtitle
-  ///
-  /// In en, this message translates to:
-  /// **'Freedom talk any person of your \nmother language.'**
-  String get onboardingSubtitle1;
-
-  /// Onboarding page 2 title
-  ///
-  /// In en, this message translates to:
-  /// **'Welcome to our freedom \nmessaging app 1'**
-  String get onboardingTitle2;
-
-  /// Onboarding page 2 subtitle
-  ///
-  /// In en, this message translates to:
-  /// **'Freedom talk any person of your \nmother language.'**
-  String get onboardingSubtitle2;
-
-  /// Onboarding page 3 title
-  ///
-  /// In en, this message translates to:
-  /// **'Welcome to our freedom \nmessaging app 2'**
-  String get onboardingTitle3;
-
-  /// Onboarding page 3 subtitle
-  ///
-  /// In en, this message translates to:
-  /// **'Freedom talk any person of your \nmother language.'**
-  String get onboardingSubtitle3;
-
-  /// Skip the onboarding
-  ///
-  /// In en, this message translates to:
-  /// **'Skip'**
-  String get skip;
-
-  /// Go to the previous onboarding page
-  ///
-  /// In en, this message translates to:
-  /// **'Previous'**
-  String get previous;
-
-  /// Go to the next onboarding page
-  ///
-  /// In en, this message translates to:
-  /// **'Next'**
-  String get next;
-
-  /// Submit the onboarding
-  ///
-  /// In en, this message translates to:
-  /// **'Submit'**
-  String get submit;
-
-  /// Title for entering registration details
-  ///
-  /// In en, this message translates to:
-  /// **'Enter Details'**
-  String get enterDetails;
-
-  /// Instructions for entering registration details
-  ///
-  /// In en, this message translates to:
-  /// **'Welcome! Please enter your name, email, and phone number to complete your registration and continue to the app.'**
-  String get welcomeMessage;
-
-  /// Label for the name input field
-  ///
-  /// In en, this message translates to:
-  /// **'Name'**
-  String get name;
-
-  /// Label for the email input field
-  ///
-  /// In en, this message translates to:
-  /// **'Email'**
-  String get email;
-
-  /// Label for the phone number input field
-  ///
-  /// In en, this message translates to:
-  /// **'Phone Number'**
-  String get phoneNumber;
-
-  /// Error message for empty name field
-  ///
-  /// In en, this message translates to:
-  /// **'Name cannot be empty.'**
-  String get nameEmptyError;
-
-  /// Error message for name length validation
-  ///
-  /// In en, this message translates to:
-  /// **'Name must be greater than 3 characters.'**
-  String get nameLengthError;
-
-  /// Error message for empty email field
-  ///
-  /// In en, this message translates to:
-  /// **'Email cannot be empty.'**
-  String get emailEmptyError;
-
-  /// Error message for invalid email address
-  ///
-  /// In en, this message translates to:
-  /// **'Please enter a valid email address.'**
-  String get emailInvalidError;
-
-  /// Error message for empty phone number field
-  ///
-  /// In en, this message translates to:
-  /// **'Phone Number cannot be empty.'**
-  String get phoneNumberEmptyError;
-
-  /// Link text for Terms of Services
-  ///
-  /// In en, this message translates to:
-  /// **'Terms of Services'**
-  String get termsOfService;
-
-  /// Link text for Privacy Policy
-  ///
-  /// In en, this message translates to:
-  /// **'Privacy Policy'**
-  String get privacyPolicy;
-
-  /// Title for the settings screen
-  ///
-  /// In en, this message translates to:
-  /// **'Setting'**
-  String get setting;
-
-  /// Section title for general settings
-  ///
-  /// In en, this message translates to:
-  /// **'General'**
-  String get general;
-
-  /// Title for the account details option
-  ///
-  /// In en, this message translates to:
-  /// **'Account details'**
-  String get accountDetails;
-
-  /// Title for the theme option
-  ///
-  /// In en, this message translates to:
-  /// **'Theme'**
-  String get theme;
-
-  /// Title for the language option
+  /// Label for selecting the preferred language
   ///
   /// In en, this message translates to:
   /// **'Language'**
-  String get language;
+  String get languageLabel;
 
-  /// Section title for info settings
+  /// Label for selecting the preferred language
   ///
   /// In en, this message translates to:
-  /// **'Info'**
-  String get info;
+  /// **'Select your language'**
+  String get selectLanguage;
 
-  /// Title for the rate my app option
+  /// Label for the Name input field
   ///
   /// In en, this message translates to:
-  /// **'Rate my app'**
-  String get rateMyApp;
+  /// **'Name'**
+  String get nameFieldLabel;
 
-  /// Title for the privacy policy option
+  /// Hint text for the Name input field
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your name'**
+  String get nameFieldHint;
+
+  /// Label for the Email input field
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get emailFieldLabel;
+
+  /// Hint text for the Email input field
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your email'**
+  String get emailFieldHint;
+
+  /// Label for the Password input field
+  ///
+  /// In en, this message translates to:
+  /// **'Password'**
+  String get passwordFieldLabel;
+
+  /// Hint text for the Password input field
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your password'**
+  String get passwordFieldHint;
+
+  /// Label for the Sign Up button
+  ///
+  /// In en, this message translates to:
+  /// **'Sign up'**
+  String get signupButtonLabel;
+
+  /// Label between Sign Up options indicating alternative methods
+  ///
+  /// In en, this message translates to:
+  /// **'OR'**
+  String get orLabel;
+
+  /// Label for the Sign Up with Google button
+  ///
+  /// In en, this message translates to:
+  /// **'Sign up with Google'**
+  String get signupWithGoogleButtonLabel;
+
+  /// Label for the Sign Up with Apple button
+  ///
+  /// In en, this message translates to:
+  /// **'Sign up with Apple'**
+  String get signupWithAppleButtonLabel;
+
+  /// Label prompting user if they already have an account
+  ///
+  /// In en, this message translates to:
+  /// **'Already have an account?'**
+  String get alreadyHaveAccountLabel;
+
+  /// Clickable Sign In text in Sign Up screen
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in'**
+  String get signinLinkLabel;
+
+  /// Title text shown in the AppBar of the Login screen
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome back!'**
+  String get welcomeBackTitle;
+
+  /// Button text for Forgot Password
+  ///
+  /// In en, this message translates to:
+  /// **'Forgot password?'**
+  String get forgotPasswordButtonLabel;
+
+  /// Label for the Sign In button
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in'**
+  String get signinButtonLabel;
+
+  /// Label for the Sign In with Google button
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in with Google'**
+  String get signinWithGoogleButtonLabel;
+
+  /// Label for the Sign In with Apple button
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in with Apple'**
+  String get signinWithAppleButtonLabel;
+
+  /// Label prompting user if they don't have an account
+  ///
+  /// In en, this message translates to:
+  /// **'Do not have an account?'**
+  String get dontHaveAccountLabel;
+
+  /// Clickable Sign Up text in Login screen
+  ///
+  /// In en, this message translates to:
+  /// **'Sign up'**
+  String get signupLinkLabel;
+
+  /// Title text shown in the AppBar of the Forgot Password screen
+  ///
+  /// In en, this message translates to:
+  /// **'Forgot Password'**
+  String get forgotPasswordTitle;
+
+  /// Instruction text shown below AppBar in Forgot Password screen
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the email address associated with your account and we’ll send you a link to reset your password.'**
+  String get forgotPasswordInstruction;
+
+  /// Title text shown in the AppBar of the Settings screen
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get settingsTitle;
+
+  /// Title for the General section in Settings screen
+  ///
+  /// In en, this message translates to:
+  /// **'General'**
+  String get settingsGeneralSection;
+
+  /// Label for Account details SettingTile
+  ///
+  /// In en, this message translates to:
+  /// **'Account details'**
+  String get settingsAccountDetails;
+
+  /// Label for Language SettingTile
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get settingsLanguage;
+
+  /// Label for Theme SettingTile
+  ///
+  /// In en, this message translates to:
+  /// **'Theme'**
+  String get settingsTheme;
+
+  /// Title for the Information section in Settings screen
+  ///
+  /// In en, this message translates to:
+  /// **'Information'**
+  String get settingsInformationSection;
+
+  /// Label for Rate us SettingTile
+  ///
+  /// In en, this message translates to:
+  /// **'Rate us'**
+  String get settingsRateUs;
+
+  /// Label for Privacy policy SettingTile
   ///
   /// In en, this message translates to:
   /// **'Privacy policy'**
-  String get privacyPolicyOption;
+  String get settingsPrivacyPolicy;
 
-  /// Title for the terms of service option
+  /// Label for Terms and Conditions SettingTile
   ///
   /// In en, this message translates to:
-  /// **'Terms of Service'**
-  String get termsOfServiceOption;
+  /// **'Terms and conditions'**
+  String get settingsTermsAndConditions;
 
-  /// Title for the contract option
-  ///
-  /// In en, this message translates to:
-  /// **'Contract'**
-  String get contract;
-
-  /// Label for the version information
+  /// Label for App Version SettingTile
   ///
   /// In en, this message translates to:
   /// **'Version'**
-  String get version;
+  String get settingsVersion;
 
-  /// Subtitle showing the current version of the app
+  /// Title for the Other section in Settings screen
   ///
   /// In en, this message translates to:
-  /// **'1.0.1 (17)'**
-  String get versionInfo;
+  /// **'Other'**
+  String get settingsOtherSection;
 
-  /// Title for the account detail screen
-  ///
-  /// In en, this message translates to:
-  /// **'Account Detail'**
-  String get accountDetail;
-
-  /// Header for updating account details
-  ///
-  /// In en, this message translates to:
-  /// **'Update Details'**
-  String get updateDetails;
-
-  /// Message explaining the purpose of the update form
-  ///
-  /// In en, this message translates to:
-  /// **'Update your name, email, and phone number to keep your profile up-to-date and continue using the app.'**
-  String get updateProfileMessage;
-
-  /// Label for the update button
-  ///
-  /// In en, this message translates to:
-  /// **'Update'**
-  String get update;
-
-  /// Validation message for empty name field
-  ///
-  /// In en, this message translates to:
-  /// **'Name can not be empty'**
-  String get nameCannotBeEmpty;
-
-  /// Validation message for short name
-  ///
-  /// In en, this message translates to:
-  /// **'Name must be greater than 3 characters'**
-  String get nameTooShort;
-
-  /// Validation message for empty email field
-  ///
-  /// In en, this message translates to:
-  /// **'Email can not be empty'**
-  String get emailCannotBeEmpty;
-
-  /// Validation message for invalid email format
-  ///
-  /// In en, this message translates to:
-  /// **'Please enter a valid email address'**
-  String get invalidEmail;
-
-  /// Validation message for empty phone number field
-  ///
-  /// In en, this message translates to:
-  /// **'Phone Number can not be empty'**
-  String get phoneNumberCannotBeEmpty;
-
-  /// Validation message for incorrect phone number length
-  ///
-  /// In en, this message translates to:
-  /// **'Phone Number must be greater than 8 and less than 15'**
-  String get phoneNumberLengthError;
-
-  /// Message indicating agreement to terms
-  ///
-  /// In en, this message translates to:
-  /// **'By purchasing, you agree to our'**
-  String get agreeToTerms;
-
-  /// Styled text for Terms of Services link
-  ///
-  /// In en, this message translates to:
-  /// **'Terms of Services'**
-  String get termsOfServices;
-
-  /// Conjunction word used in the agreement text
-  ///
-  /// In en, this message translates to:
-  /// **'and'**
-  String get and;
-
-  /// Text for home link
-  ///
-  /// In en, this message translates to:
-  /// **'Home'**
-  String get home;
-
-  /// Styled text for Privacy Policy link, indicating the last word
-  ///
-  /// In en, this message translates to:
-  /// **'Privacy Policy.'**
-  String get privacyPolicyEnd;
-
-  /// Validation message for an empty name field
-  ///
-  /// In en, this message translates to:
-  /// **'Name can not be empty'**
-  String get nameValidationEmpty;
-
-  /// Validation message for name length
-  ///
-  /// In en, this message translates to:
-  /// **'Name must be greater than 3 characters'**
-  String get nameValidationLength;
-
-  /// Validation message for an empty email field
-  ///
-  /// In en, this message translates to:
-  /// **'Email can not be empty'**
-  String get emailValidationEmpty;
-
-  /// Validation message for invalid email format
-  ///
-  /// In en, this message translates to:
-  /// **'Please enter a valid email address'**
-  String get emailValidationInvalid;
-
-  /// Validation message for an empty phone number field
-  ///
-  /// In en, this message translates to:
-  /// **'Phone Number can not be empty'**
-  String get phoneNumberValidationEmpty;
-
-  /// Validation message for phone number length
-  ///
-  /// In en, this message translates to:
-  /// **'Phone Number must be greater than 8 and less than 15 characters'**
-  String get phoneNumberValidationLength;
-
-  /// Option for light theme
-  ///
-  /// In en, this message translates to:
-  /// **'Light'**
-  String get light;
-
-  /// Option for dark theme
-  ///
-  /// In en, this message translates to:
-  /// **'Dark'**
-  String get dark;
-
-  /// Option for system theme
-  ///
-  /// In en, this message translates to:
-  /// **'System'**
-  String get system;
-
-  /// Option to delete the account
-  ///
-  /// In en, this message translates to:
-  /// **'Delete My Account'**
-  String get deleteMyAccount;
-
-  /// Option to log out
+  /// Label for Logout SettingTile
   ///
   /// In en, this message translates to:
   /// **'Logout'**
-  String get logout;
+  String get settingsLogout;
 
-  /// Message displaying the number of times a button has been pressed
+  /// Label for Delete Account SettingTile
   ///
   /// In en, this message translates to:
-  /// **'You have pushed the button this many times:'**
-  String get buttonPressCount;
+  /// **'Delete account'**
+  String get settingsDeleteAccount;
+
+  /// Title shown in the AppBar of the theme selection screen
+  ///
+  /// In en, this message translates to:
+  /// **'Theme'**
+  String get themeScreenTitle;
+
+  /// Option to use the system default theme
+  ///
+  /// In en, this message translates to:
+  /// **'System Default'**
+  String get systemDefaultLabel;
+
+  /// Option to select light mode
+  ///
+  /// In en, this message translates to:
+  /// **'Light Mode'**
+  String get lightModeLabel;
+
+  /// Option to select dark mode
+  ///
+  /// In en, this message translates to:
+  /// **'Dark Mode'**
+  String get darkModeLabel;
+
+  /// Title shown in the AppBar of the Account Details screen
+  ///
+  /// In en, this message translates to:
+  /// **'Account Details'**
+  String get accountDetailsScreenTitle;
+
+  /// Label for the Save button
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get saveButtonLabel;
+
+  /// Title shown in the AppBar of the Home screen
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get homeScreenTitle;
+
+  /// Label text shown in the body of the Home screen
+  ///
+  /// In en, this message translates to:
+  /// **'Home Screen'**
+  String get homeScreenLabel;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
@@ -497,7 +375,7 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
   }
 
   @override
-  bool isSupported(Locale locale) => <String>['en', 'es', 'hi'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => <String>['en', 'es'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -510,7 +388,6 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   switch (locale.languageCode) {
     case 'en': return AppLocalizationsEn();
     case 'es': return AppLocalizationsEs();
-    case 'hi': return AppLocalizationsHi();
   }
 
   throw FlutterError(

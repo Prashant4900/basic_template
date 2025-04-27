@@ -5,29 +5,35 @@ class CustomElevatedButton extends StatelessWidget {
   const CustomElevatedButton({
     required this.label,
     super.key,
+    this.backgroundColor,
+    this.foregroundColor,
     this.onPressed,
+    this.icon,
   });
 
-  final void Function()? onPressed;
   final String label;
+  final Color? backgroundColor;
+  final Color? foregroundColor;
+  final VoidCallback? onPressed;
+  final Widget? icon;
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      style: ElevatedButton.styleFrom(
-        backgroundColor: Theme.of(context).colorScheme.primary,
-        foregroundColor: Theme.of(context).colorScheme.onPrimary,
-        minimumSize: const Size(double.infinity, kToolbarHeight),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8.dm),
+    return SizedBox(
+      width: double.infinity,
+      child: ElevatedButton.icon(
+        onPressed: onPressed,
+        style: ElevatedButton.styleFrom(
+          backgroundColor: backgroundColor ?? Colors.white,
+          foregroundColor: foregroundColor ?? Colors.black,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+            side: const BorderSide(color: Colors.grey, width: .7),
+          ),
+          fixedSize: Size.fromHeight(50.h),
         ),
-      ),
-      onPressed: onPressed,
-      child: Text(
-        label,
-        style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-              color: Theme.of(context).colorScheme.onPrimary,
-            ),
+        label: Text(label),
+        icon: icon,
       ),
     );
   }

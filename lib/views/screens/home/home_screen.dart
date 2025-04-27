@@ -1,44 +1,36 @@
-import 'package:basic_template/l10n/l10n.dart';
-import 'package:basic_template/services/app_prefs.dart';
-import 'package:basic_template/views/components/body_widget.dart';
+import 'package:appwrite_app/config/app_config.dart';
+import 'package:appwrite_app/config/env_config.dart';
+import 'package:appwrite_app/l10n/l10n.dart';
+import 'package:appwrite_app/router/router.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
-class MyHomeScreen extends StatefulWidget {
+class MyHomeScreen extends StatelessWidget {
   const MyHomeScreen({super.key});
 
   @override
-  State<MyHomeScreen> createState() => _MyHomeScreenState();
-}
-
-class _MyHomeScreenState extends State<MyHomeScreen> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() => _counter++);
-  }
-
-  @override
   Widget build(BuildContext context) {
+    final l10n = context.l10n;
+
     return Scaffold(
       appBar: AppBar(
-        title: Text('${context.lang.hi}, ${AppPrefHelper.getDisplayName()}'),
-        centerTitle: false,
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+        title: Text(l10n.homeScreenTitle),
+        centerTitle: true,
+        actions: [
+          IconButton(
+            onPressed: () => context.push(Routes.setting),
+            icon: const Icon(Icons.settings_outlined),
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
+        onPressed: () {},
         child: const Icon(Icons.add),
       ),
-      body: BodyWidget(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(context.lang.buttonPressCount),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
+      body: Center(
+        child: Text(
+          '${l10n.homeScreenLabel}: ${AppConfig.env.get(EnvKey.env)}',
         ),
       ),
     );

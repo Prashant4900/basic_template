@@ -34,13 +34,14 @@ flutter_native_splash:
   #branding_mode: bottom
   
   # Set the branding padding from the bottom of the screen.  The default value is 0
+  # (Not supported on web yet)
   # branding_bottom_padding: 24
 
   # The color_dark, background_image_dark, image_dark, branding_dark are parameters that set the background
   # and image when the device is in dark mode. If they are not specified, the app will use the
-  # parameters from above. If the image_dark parameter is specified, color_dark or
-  # background_image_dark must be specified.  color_dark and background_image_dark cannot both be
-  # set.
+  # parameters from above.  If there is no parameter above, the app will use the light mode values.
+  # If the image_dark parameter is specified, color_dark or background_image_dark must be specified.  
+  # color_dark and background_image_dark cannot both be set.
   #color_dark: "#042a49"
   #background_image_dark: "assets/dark-background.png"
   #image_dark: assets/splash-invert.png
@@ -72,7 +73,7 @@ flutter_native_splash:
 
     # The image_dark, color_dark, icon_background_color_dark, and branding_dark set values that
     # apply when the device is in dark mode. If they are not specified, the app will use the
-    # parameters from above.
+    # parameters from above.  If there is no parameter above, the app will use the light mode values.
     #image_dark: assets/android12splash-invert.png
     #color_dark: "#042a49"
     #icon_background_color_dark: "#eeeeee"
@@ -118,7 +119,9 @@ flutter_native_splash:
   # android_gravity can be one of the following Android Gravity (see
   # https://developer.android.com/reference/android/view/Gravity): bottom, center,
   # center_horizontal, center_vertical, clip_horizontal, clip_vertical, end, fill, fill_horizontal,
-  # fill_vertical, left, right, start, or top.
+  # fill_vertical, left, right, start, or top. android_gravity can be combined using the | operator to achieve multiple effects. 
+  # For example:
+  # `android_gravity: fill|clip_vertical` - This will fill the width while maintaining the image's vertical aspect ratio
   #android_gravity: center
   #
   # ios_content_mode can be one of the following iOS UIView.ContentMode (see

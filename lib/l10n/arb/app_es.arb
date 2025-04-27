@@ -1,0 +1,183 @@
+{
+    "@@locale": "es",
+    "registerNewAccountTitle": "¡Registra una nueva cuenta!",
+    "@registerNewAccountTitle": {
+        "description": "Title text shown in the AppBar of the SignUp screen"
+    },
+    "languageLabel": "Idioma",
+    "@languageLabel": {
+        "description": "Etiqueta para seleccionar el idioma preferido"
+    },
+    "selectLanguage": "Selecciona tu idioma",
+    "@selectLanguage": {
+        "description": "Etiqueta para seleccionar el idioma preferido"
+    },
+    "nameFieldLabel": "Nombre",
+    "@nameFieldLabel": {
+        "description": "Label for the Name input field"
+    },
+    "nameFieldHint": "Introduce tu nombre",
+    "@nameFieldHint": {
+        "description": "Hint text for the Name input field"
+    },
+    "emailFieldLabel": "Correo electrónico",
+    "@emailFieldLabel": {
+        "description": "Label for the Email input field"
+    },
+    "emailFieldHint": "Introduce tu correo electrónico",
+    "@emailFieldHint": {
+        "description": "Hint text for the Email input field"
+    },
+    "passwordFieldLabel": "Contraseña",
+    "@passwordFieldLabel": {
+        "description": "Label for the Password input field"
+    },
+    "passwordFieldHint": "Introduce tu contraseña",
+    "@passwordFieldHint": {
+        "description": "Hint text for the Password input field"
+    },
+    "signupButtonLabel": "Registrarse",
+    "@signupButtonLabel": {
+        "description": "Label for the Sign Up button"
+    },
+    "orLabel": "O",
+    "@orLabel": {
+        "description": "Label between Sign Up options indicating alternative methods"
+    },
+    "signupWithGoogleButtonLabel": "Registrarse con Google",
+    "@signupWithGoogleButtonLabel": {
+        "description": "Label for the Sign Up with Google button"
+    },
+    "signupWithAppleButtonLabel": "Registrarse con Apple",
+    "@signupWithAppleButtonLabel": {
+        "description": "Label for the Sign Up with Apple button"
+    },
+    "alreadyHaveAccountLabel": "¿Ya tienes una cuenta?",
+    "@alreadyHaveAccountLabel": {
+        "description": "Label prompting user if they already have an account"
+    },
+    "signinLinkLabel": "Iniciar sesión",
+    "@signinLinkLabel": {
+        "description": "Clickable Sign In text in Sign Up screen"
+    },
+    "welcomeBackTitle": "¡Bienvenido de nuevo!",
+    "@welcomeBackTitle": {
+        "description": "Title text shown in the AppBar of the Login screen"
+    },
+    "forgotPasswordButtonLabel": "¿Olvidaste tu contraseña?",
+    "@forgotPasswordButtonLabel": {
+        "description": "Button text for Forgot Password"
+    },
+    "signinButtonLabel": "Iniciar sesión",
+    "@signinButtonLabel": {
+        "description": "Label for the Sign In button"
+    },
+    "signinWithGoogleButtonLabel": "Iniciar sesión con Google",
+    "@signinWithGoogleButtonLabel": {
+        "description": "Label for the Sign In with Google button"
+    },
+    "signinWithAppleButtonLabel": "Iniciar sesión con Apple",
+    "@signinWithAppleButtonLabel": {
+        "description": "Label for the Sign In with Apple button"
+    },
+    "dontHaveAccountLabel": "¿No tienes una cuenta?",
+    "@dontHaveAccountLabel": {
+        "description": "Label prompting user if they don't have an account"
+    },
+    "signupLinkLabel": "Registrarse",
+    "@signupLinkLabel": {
+        "description": "Clickable Sign Up text in Login screen"
+    },
+    "forgotPasswordTitle": "Olvidé mi contraseña",
+    "@forgotPasswordTitle": {
+        "description": "Título que se muestra en la AppBar de la pantalla de recuperación de contraseña"
+    },
+    "forgotPasswordInstruction": "Introduce la dirección de correo electrónico asociada a tu cuenta y te enviaremos un enlace para restablecer tu contraseña.",
+    "@forgotPasswordInstruction": {
+        "description": "Texto de instrucciones que se muestra debajo de la AppBar en la pantalla de recuperación de contraseña"
+    },
+    "settingsTitle": "Configuración",
+    "@settingsTitle": {
+        "description": "Texto del título mostrado en la AppBar de la pantalla de Configuración"
+    },
+    "settingsGeneralSection": "General",
+    "@settingsGeneralSection": {
+        "description": "Título para la sección General en la pantalla de Configuración"
+    },
+    "settingsAccountDetails": "Detalles de la cuenta",
+    "@settingsAccountDetails": {
+        "description": "Etiqueta para el elemento Detalles de la cuenta"
+    },
+    "settingsLanguage": "Idioma",
+    "@settingsLanguage": {
+        "description": "Etiqueta para el elemento Idioma"
+    },
+    "settingsTheme": "Tema",
+    "@settingsTheme": {
+        "description": "Etiqueta para el elemento Tema"
+    },
+    "settingsInformationSection": "Información",
+    "@settingsInformationSection": {
+        "description": "Título para la sección de Información en la pantalla de Configuración"
+    },
+    "settingsRateUs": "Califícanos",
+    "@settingsRateUs": {
+        "description": "Etiqueta para el elemento Califícanos"
+    },
+    "settingsPrivacyPolicy": "Política de privacidad",
+    "@settingsPrivacyPolicy": {
+        "description": "Etiqueta para el elemento Política de privacidad"
+    },
+    "settingsTermsAndConditions": "Términos y condiciones",
+    "@settingsTermsAndConditions": {
+        "description": "Etiqueta para el elemento Términos y Condiciones"
+    },
+    "settingsVersion": "Versión",
+    "@settingsVersion": {
+        "description": "Etiqueta para el elemento Versión de la aplicación"
+    },
+    "settingsOtherSection": "Otros",
+    "@settingsOtherSection": {
+        "description": "Título para la sección Otros en la pantalla de Configuración"
+    },
+    "settingsLogout": "Cerrar sesión",
+    "@settingsLogout": {
+        "description": "Etiqueta para el elemento Cerrar sesión"
+    },
+    "settingsDeleteAccount": "Eliminar cuenta",
+    "@settingsDeleteAccount": {
+        "description": "Etiqueta para el elemento Eliminar cuenta"
+    },
+    "themeScreenTitle": "Tema",
+    "@themeScreenTitle": {
+        "description": "Título mostrado en la AppBar de la pantalla de selección de tema"
+    },
+    "systemDefaultLabel": "Predeterminado del sistema",
+    "@systemDefaultLabel": {
+        "description": "Opción para usar el tema predeterminado del sistema"
+    },
+    "lightModeLabel": "Modo claro",
+    "@lightModeLabel": {
+        "description": "Opción para seleccionar el modo claro"
+    },
+    "darkModeLabel": "Modo oscuro",
+    "@darkModeLabel": {
+        "description": "Opción para seleccionar el modo oscuro"
+    },
+    "accountDetailsScreenTitle": "Detalles de la cuenta",
+    "@accountDetailsScreenTitle": {
+        "description": "Título mostrado en la AppBar de la pantalla de detalles de la cuenta"
+    },
+    "saveButtonLabel": "Guardar",
+    "@saveButtonLabel": {
+        "description": "Etiqueta para el botón de Guardar"
+    },
+    "homeScreenTitle": "Inicio",
+    "@homeScreenTitle": {
+        "description": "Título mostrado en la AppBar de la pantalla de inicio"
+    },
+    "homeScreenLabel": "Pantalla de inicio",
+    "@homeScreenLabel": {
+        "description": "Texto de la etiqueta mostrado en el cuerpo de la pantalla de inicio"
+    }
+}

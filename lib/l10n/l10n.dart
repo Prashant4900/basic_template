@@ -1,8 +1,6 @@
-import 'package:basic_template/gen/l10n/app_localizations.dart';
-import 'package:flutter/material.dart';
+import 'package:appwrite_app/gen/l10n/app_localizations.dart';
+import 'package:flutter/widgets.dart';
 
-extension LocalizationStrings on BuildContext {
-  AppLocalizations get lang {
-    return AppLocalizations.of(this)!;
-  }
+extension AppLocalizationsX on BuildContext {
+  AppLocalizations get l10n => AppLocalizations.of(this)!;
 }

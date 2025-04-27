@@ -1,164 +1,86 @@
-import 'package:basic_template/common/dimensions.dart';
-import 'package:basic_template/gen/assets.gen.dart';
-import 'package:basic_template/l10n/l10n.dart';
-import 'package:basic_template/routes/routers.dart';
-import 'package:basic_template/views/components/indicators.dart';
+import 'package:appwrite_app/core/dimensions.dart';
+import 'package:appwrite_app/l10n/l10n.dart';
+import 'package:appwrite_app/router/router.dart';
+import 'package:appwrite_app/views/components/buttons.dart';
+import 'package:appwrite_app/views/screens/settings/cubit/setting_cubit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
-class MyOnboardingScreen extends StatefulWidget {
+class MyOnboardingScreen extends StatelessWidget {
   const MyOnboardingScreen({super.key});
 
   @override
-  State<MyOnboardingScreen> createState() => _MyOnboardingScreenState();
-}
-
-class _MyOnboardingScreenState extends State<MyOnboardingScreen> {
-  int currentPage = 0;
-
-  late final PageController controller;
-
-  @override
-  void initState() {
-    super.initState();
-    controller = PageController();
-  }
-
-  @override
-  void dispose() {
-    controller.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
-    final onboardingPageData = <Map<String, String>>[
-      {
-        'image': Assets.images.onboardingImageOne.path,
-        'title': context.lang.welcomeMessage,
-        'subtitle': 'Freedom talk any person of your \nmother language.',
+    final l10n = context.l10n;
+
+    return BlocConsumer<SettingCubit, SettingState>(
+      listener: (context, state) {
+        if (state.status == SettingStatus.success) {
+          context.push(Routes.login);
+        }
       },
-      {
-        'image': Assets.images.onboardingImageOne.path,
-        'title': context.lang.welcomeMessage,
-        'subtitle': 'Freedom talk any person of your \nmother language.',
+      builder: (context, state) {
+        return Scaffold(
+          body: Stack(
+            children: [
+              Image.asset(
+                'assets/images/language-onboarding.png',
+                width: double.infinity,
+                height: MediaQuery.of(context).size.height,
+                fit: BoxFit.cover,
+              ),
+              Column(
+                children: [
+                  const Spacer(),
+                  Container(
+                    width: double.infinity,
+                    height: MediaQuery.of(context).size.height * 0.3,
+                    padding: horizontalPadding32,
+                    decoration: BoxDecoration(
+                      color: Theme.of(context).scaffoldBackgroundColor,
+                      borderRadius: const BorderRadius.only(
+                        topLeft: Radius.circular(24),
+                        topRight: Radius.circular(24),
+                      ),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Spacer(flex: 2),
+                        Text(
+                          l10n.selectLanguage,
+                          style: Theme.of(context).textTheme.titleLarge
+                              ?.copyWith(fontWeight: FontWeight.w600),
+                        ),
+                        const Spacer(flex: 3),
+                        CustomElevatedButton(
+                          label: 'English',
+                          backgroundColor: Colors.black,
+                          foregroundColor: Colors.white,
+                          onPressed:
+                              () => context.read<SettingCubit>().changeLanguage(
+                                'en',
+                              ),
+                        ),
+                        verticalMargin8,
+                        CustomElevatedButton(
+                          label: 'Español',
+                          onPressed:
+                              () => context.read<SettingCubit>().changeLanguage(
+                                'es',
+                              ),
+                        ),
+                        const Spacer(flex: 3),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        );
       },
-      {
-        'image': Assets.images.onboardingImageOne.path,
-        'title': context.lang.welcomeMessage,
-        'subtitle': 'Freedom talk any person of your \nmother language.',
-      }
-    ];
-
-    return Scaffold(
-      body: SafeArea(
-        child: PageView.builder(
-          controller: controller,
-          itemCount: onboardingPageData.length,
-          onPageChanged: (value) {
-            setState(() => currentPage = value);
-          },
-          itemBuilder: (context, index) => OnboardingPage(
-            image: onboardingPageData[index]['image']!,
-            title: onboardingPageData[index]['title']!,
-            subtitle: onboardingPageData[index]['subtitle']!,
-          ),
-        ),
-      ),
-      bottomNavigationBar: BottomAppBar(
-        color: Colors.transparent,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            TextButton(
-              onPressed: () {
-                if (currentPage == 0) {
-                  context.pushReplacement(MyRoutes.registration);
-                } else {
-                  controller.previousPage(
-                    duration: const Duration(milliseconds: 600),
-                    curve: Curves.easeOut,
-                  );
-                }
-              },
-              child: Text(
-                currentPage == 0 ? context.lang.skip : context.lang.previous,
-              ),
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: List.generate(
-                onboardingPageData.length,
-                (index) => DotIndicator(isActive: index == currentPage),
-              ),
-            ),
-            TextButton(
-              onPressed: () {
-                if (currentPage != onboardingPageData.length - 1) {
-                  controller.nextPage(
-                    duration: const Duration(milliseconds: 600),
-                    curve: Curves.easeIn,
-                  );
-                } else {
-                  context.pushReplacement(MyRoutes.registration);
-                }
-              },
-              child: Text(
-                currentPage != onboardingPageData.length - 1
-                    ? context.lang.next
-                    : context.lang.submit,
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class OnboardingPage extends StatelessWidget {
-  const OnboardingPage({
-    required this.image,
-    required this.title,
-    required this.subtitle,
-    super.key,
-  });
-
-  final String image;
-  final String title;
-  final String subtitle;
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox.expand(
-      child: Column(
-        children: [
-          const Spacer(flex: 2),
-          Image.asset(image),
-          const Spacer(flex: 3),
-          Text(
-            title,
-            textAlign: TextAlign.center,
-            style: Theme.of(context)
-                .textTheme
-                .headlineSmall!
-                .copyWith(fontWeight: FontWeight.bold),
-          ),
-          verticalMargin12,
-          Text(
-            subtitle,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Theme.of(context)
-                  .textTheme
-                  .bodyLarge!
-                  .color!
-                  .withOpacity(0.64),
-            ),
-          ),
-          const Spacer(flex: 2),
-        ],
-      ),
     );
   }
 }

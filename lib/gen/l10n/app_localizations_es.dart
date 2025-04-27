@@ -1,3 +1,5 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
 import 'app_localizations.dart';
 
 // ignore_for_file: type=lint
@@ -7,197 +9,137 @@ class AppLocalizationsEs extends AppLocalizations {
   AppLocalizationsEs([String locale = 'es']) : super(locale);
 
   @override
-  String get helloWorld => '¡Hola, Mundo! Español';
+  String get registerNewAccountTitle => '¡Registra una nueva cuenta!';
 
   @override
-  String get appName => 'Plantilla Básica de Flutter';
+  String get languageLabel => 'Idioma';
 
   @override
-  String get hi => 'Hola';
+  String get selectLanguage => 'Selecciona tu idioma';
 
   @override
-  String get selectLanguage => 'Seleccionar idioma';
+  String get nameFieldLabel => 'Nombre';
 
   @override
-  String get onboardingTitle1 => 'Bienvenido a nuestra \naplicación de mensajería libre';
+  String get nameFieldHint => 'Introduce tu nombre';
 
   @override
-  String get onboardingSubtitle1 => 'Habla libremente con cualquier persona \nen tu idioma nativo.';
+  String get emailFieldLabel => 'Correo electrónico';
 
   @override
-  String get onboardingTitle2 => 'Bienvenido a nuestra \naplicación de mensajería libre 1';
+  String get emailFieldHint => 'Introduce tu correo electrónico';
 
   @override
-  String get onboardingSubtitle2 => 'Habla libremente con cualquier persona \nen tu idioma nativo.';
+  String get passwordFieldLabel => 'Contraseña';
 
   @override
-  String get onboardingTitle3 => 'Bienvenido a nuestra \naplicación de mensajería libre 2';
+  String get passwordFieldHint => 'Introduce tu contraseña';
 
   @override
-  String get onboardingSubtitle3 => 'Habla libremente con cualquier persona \nen tu idioma nativo.';
+  String get signupButtonLabel => 'Registrarse';
 
   @override
-  String get skip => 'Omitir';
+  String get orLabel => 'O';
 
   @override
-  String get previous => 'Anterior';
+  String get signupWithGoogleButtonLabel => 'Registrarse con Google';
 
   @override
-  String get next => 'Siguiente';
+  String get signupWithAppleButtonLabel => 'Registrarse con Apple';
 
   @override
-  String get submit => 'Enviar';
+  String get alreadyHaveAccountLabel => '¿Ya tienes una cuenta?';
 
   @override
-  String get enterDetails => 'Ingresar detalles';
+  String get signinLinkLabel => 'Iniciar sesión';
 
   @override
-  String get welcomeMessage => '¡Bienvenido! Por favor ingresa tu nombre, correo electrónico y número de teléfono para completar tu registro y continuar en la aplicación.';
+  String get welcomeBackTitle => '¡Bienvenido de nuevo!';
 
   @override
-  String get name => 'Nombre';
+  String get forgotPasswordButtonLabel => '¿Olvidaste tu contraseña?';
 
   @override
-  String get email => 'Correo electrónico';
+  String get signinButtonLabel => 'Iniciar sesión';
 
   @override
-  String get phoneNumber => 'Número de teléfono';
+  String get signinWithGoogleButtonLabel => 'Iniciar sesión con Google';
 
   @override
-  String get nameEmptyError => 'El nombre no puede estar vacío.';
+  String get signinWithAppleButtonLabel => 'Iniciar sesión con Apple';
 
   @override
-  String get nameLengthError => 'El nombre debe tener más de 3 caracteres.';
+  String get dontHaveAccountLabel => '¿No tienes una cuenta?';
 
   @override
-  String get emailEmptyError => 'El correo electrónico no puede estar vacío.';
+  String get signupLinkLabel => 'Registrarse';
 
   @override
-  String get emailInvalidError => 'Por favor ingresa una dirección de correo electrónico válida.';
+  String get forgotPasswordTitle => 'Olvidé mi contraseña';
 
   @override
-  String get phoneNumberEmptyError => 'El número de teléfono no puede estar vacío.';
+  String get forgotPasswordInstruction => 'Introduce la dirección de correo electrónico asociada a tu cuenta y te enviaremos un enlace para restablecer tu contraseña.';
 
   @override
-  String get termsOfService => 'Términos de servicio';
+  String get settingsTitle => 'Configuración';
 
   @override
-  String get privacyPolicy => 'Política de privacidad';
+  String get settingsGeneralSection => 'General';
 
   @override
-  String get setting => 'Configuración';
+  String get settingsAccountDetails => 'Detalles de la cuenta';
 
   @override
-  String get general => 'General';
+  String get settingsLanguage => 'Idioma';
 
   @override
-  String get accountDetails => 'Detalles de la cuenta';
+  String get settingsTheme => 'Tema';
 
   @override
-  String get theme => 'Tema';
+  String get settingsInformationSection => 'Información';
 
   @override
-  String get language => 'Idioma';
+  String get settingsRateUs => 'Califícanos';
 
   @override
-  String get info => 'Información';
+  String get settingsPrivacyPolicy => 'Política de privacidad';
 
   @override
-  String get rateMyApp => 'Califica mi aplicación';
+  String get settingsTermsAndConditions => 'Términos y condiciones';
 
   @override
-  String get privacyPolicyOption => 'Política de privacidad';
+  String get settingsVersion => 'Versión';
 
   @override
-  String get termsOfServiceOption => 'Términos de servicio';
+  String get settingsOtherSection => 'Otros';
 
   @override
-  String get contract => 'Contrato';
+  String get settingsLogout => 'Cerrar sesión';
 
   @override
-  String get version => 'Versión';
+  String get settingsDeleteAccount => 'Eliminar cuenta';
 
   @override
-  String get versionInfo => '1.0.1 (17)';
+  String get themeScreenTitle => 'Tema';
 
   @override
-  String get accountDetail => 'Detalle de la cuenta';
+  String get systemDefaultLabel => 'Predeterminado del sistema';
 
   @override
-  String get updateDetails => 'Actualizar detalles';
+  String get lightModeLabel => 'Modo claro';
 
   @override
-  String get updateProfileMessage => 'Actualiza tu nombre, correo electrónico y número de teléfono para mantener tu perfil actualizado y continuar usando la aplicación.';
+  String get darkModeLabel => 'Modo oscuro';
 
   @override
-  String get update => 'Actualizar';
+  String get accountDetailsScreenTitle => 'Detalles de la cuenta';
 
   @override
-  String get nameCannotBeEmpty => 'El nombre no puede estar vacío';
+  String get saveButtonLabel => 'Guardar';
 
   @override
-  String get nameTooShort => 'El nombre debe tener más de 3 caracteres';
+  String get homeScreenTitle => 'Inicio';
 
   @override
-  String get emailCannotBeEmpty => 'El correo electrónico no puede estar vacío';
-
-  @override
-  String get invalidEmail => 'Por favor ingresa una dirección de correo electrónico válida';
-
-  @override
-  String get phoneNumberCannotBeEmpty => 'El número de teléfono no puede estar vacío';
-
-  @override
-  String get phoneNumberLengthError => 'El número de teléfono debe ser mayor de 8 y menor de 15';
-
-  @override
-  String get agreeToTerms => 'Al comprar, aceptas nuestros';
-
-  @override
-  String get termsOfServices => 'Términos de Servicio';
-
-  @override
-  String get and => 'y';
-
-  @override
-  String get home => 'Inicio';
-
-  @override
-  String get privacyPolicyEnd => 'Política de Privacidad.';
-
-  @override
-  String get nameValidationEmpty => 'El nombre no puede estar vacío';
-
-  @override
-  String get nameValidationLength => 'El nombre debe tener más de 3 caracteres';
-
-  @override
-  String get emailValidationEmpty => 'El correo electrónico no puede estar vacío';
-
-  @override
-  String get emailValidationInvalid => 'Por favor, introduce una dirección de correo electrónico válida';
-
-  @override
-  String get phoneNumberValidationEmpty => 'El número de teléfono no puede estar vacío';
-
-  @override
-  String get phoneNumberValidationLength => 'El número de teléfono debe ser mayor de 8 y menor de 15 caracteres';
-
-  @override
-  String get light => 'Día';
-
-  @override
-  String get dark => 'Noche';
-
-  @override
-  String get system => 'Sistema';
-
-  @override
-  String get deleteMyAccount => 'Eliminar mi cuenta';
-
-  @override
-  String get logout => 'Cerrar sesión';
-
-  @override
-  String get buttonPressCount => 'Has pulsado el botón tantas veces:';
+  String get homeScreenLabel => 'Pantalla de inicio';
 }

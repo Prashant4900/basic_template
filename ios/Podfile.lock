@@ -1,10 +1,17 @@
 PODS:
   - Flutter (1.0.0)
-  - flutter_native_splash (0.0.1):
+  - flutter_native_splash (2.4.3):
+    - Flutter
+  - package_info_plus (0.4.5):
     - Flutter
   - path_provider_foundation (0.0.1):
     - Flutter
     - FlutterMacOS
+  - PostHog (3.24.2)
+  - posthog_flutter (0.0.1):
+    - Flutter
+    - FlutterMacOS
+    - PostHog (~> 3.22)
   - shared_preferences_foundation (0.0.1):
     - Flutter
     - FlutterMacOS
@@ -14,17 +21,27 @@ PODS:
 DEPENDENCIES:
   - Flutter (from `Flutter`)
   - flutter_native_splash (from `.symlinks/plugins/flutter_native_splash/ios`)
+  - package_info_plus (from `.symlinks/plugins/package_info_plus/ios`)
   - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
+  - posthog_flutter (from `.symlinks/plugins/posthog_flutter/ios`)
   - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/darwin`)
   - url_launcher_ios (from `.symlinks/plugins/url_launcher_ios/ios`)
+
+SPEC REPOS:
+  trunk:
+    - PostHog
 
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
   flutter_native_splash:
     :path: ".symlinks/plugins/flutter_native_splash/ios"
+  package_info_plus:
+    :path: ".symlinks/plugins/package_info_plus/ios"
   path_provider_foundation:
     :path: ".symlinks/plugins/path_provider_foundation/darwin"
+  posthog_flutter:
+    :path: ".symlinks/plugins/posthog_flutter/ios"
   shared_preferences_foundation:
     :path: ".symlinks/plugins/shared_preferences_foundation/darwin"
   url_launcher_ios:
@@ -32,11 +49,14 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
-  flutter_native_splash: edf599c81f74d093a4daf8e17bd7a018854bc778
-  path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
-  shared_preferences_foundation: fcdcbc04712aee1108ac7fda236f363274528f78
-  url_launcher_ios: 5334b05cef931de560670eeae103fd3e431ac3fe
+  flutter_native_splash: c32d145d68aeda5502d5f543ee38c192065986cf
+  package_info_plus: af8e2ca6888548050f16fa2f1938db7b5a5df499
+  path_provider_foundation: 080d55be775b7414fd5a5ef3ac137b97b097e564
+  PostHog: f99dbaedad1a573a195cb17c3ea48d50422cb3a6
+  posthog_flutter: 631ab870f7daf1ed190deeb2414eb3e347445f37
+  shared_preferences_foundation: 9e1978ff2562383bd5676f64ec4e9aa8fa06a6f7
+  url_launcher_ios: 694010445543906933d732453a59da0a173ae33d
 
-PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
+PODFILE CHECKSUM: 251cb053df7158f337c0712f2ab29f4e0fa474ce
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2

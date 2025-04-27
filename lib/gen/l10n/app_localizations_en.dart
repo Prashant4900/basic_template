@@ -1,3 +1,5 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
 import 'app_localizations.dart';
 
 // ignore_for_file: type=lint
@@ -7,197 +9,137 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get helloWorld => 'Hello, World! English';
+  String get registerNewAccountTitle => 'Register a new account!';
 
   @override
-  String get appName => 'Flutter Basic Template';
+  String get languageLabel => 'Language';
 
   @override
-  String get hi => 'Hi';
+  String get selectLanguage => 'Select your language';
 
   @override
-  String get selectLanguage => 'Select Language';
+  String get nameFieldLabel => 'Name';
 
   @override
-  String get onboardingTitle1 => 'Welcome to our freedom \nmessaging app';
+  String get nameFieldHint => 'Enter your name';
 
   @override
-  String get onboardingSubtitle1 => 'Freedom talk any person of your \nmother language.';
+  String get emailFieldLabel => 'Email';
 
   @override
-  String get onboardingTitle2 => 'Welcome to our freedom \nmessaging app 1';
+  String get emailFieldHint => 'Enter your email';
 
   @override
-  String get onboardingSubtitle2 => 'Freedom talk any person of your \nmother language.';
+  String get passwordFieldLabel => 'Password';
 
   @override
-  String get onboardingTitle3 => 'Welcome to our freedom \nmessaging app 2';
+  String get passwordFieldHint => 'Enter your password';
 
   @override
-  String get onboardingSubtitle3 => 'Freedom talk any person of your \nmother language.';
+  String get signupButtonLabel => 'Sign up';
 
   @override
-  String get skip => 'Skip';
+  String get orLabel => 'OR';
 
   @override
-  String get previous => 'Previous';
+  String get signupWithGoogleButtonLabel => 'Sign up with Google';
 
   @override
-  String get next => 'Next';
+  String get signupWithAppleButtonLabel => 'Sign up with Apple';
 
   @override
-  String get submit => 'Submit';
+  String get alreadyHaveAccountLabel => 'Already have an account?';
 
   @override
-  String get enterDetails => 'Enter Details';
+  String get signinLinkLabel => 'Sign in';
 
   @override
-  String get welcomeMessage => 'Welcome! Please enter your name, email, and phone number to complete your registration and continue to the app.';
+  String get welcomeBackTitle => 'Welcome back!';
 
   @override
-  String get name => 'Name';
+  String get forgotPasswordButtonLabel => 'Forgot password?';
 
   @override
-  String get email => 'Email';
+  String get signinButtonLabel => 'Sign in';
 
   @override
-  String get phoneNumber => 'Phone Number';
+  String get signinWithGoogleButtonLabel => 'Sign in with Google';
 
   @override
-  String get nameEmptyError => 'Name cannot be empty.';
+  String get signinWithAppleButtonLabel => 'Sign in with Apple';
 
   @override
-  String get nameLengthError => 'Name must be greater than 3 characters.';
+  String get dontHaveAccountLabel => 'Do not have an account?';
 
   @override
-  String get emailEmptyError => 'Email cannot be empty.';
+  String get signupLinkLabel => 'Sign up';
 
   @override
-  String get emailInvalidError => 'Please enter a valid email address.';
+  String get forgotPasswordTitle => 'Forgot Password';
 
   @override
-  String get phoneNumberEmptyError => 'Phone Number cannot be empty.';
+  String get forgotPasswordInstruction => 'Enter the email address associated with your account and we’ll send you a link to reset your password.';
 
   @override
-  String get termsOfService => 'Terms of Services';
+  String get settingsTitle => 'Settings';
 
   @override
-  String get privacyPolicy => 'Privacy Policy';
+  String get settingsGeneralSection => 'General';
 
   @override
-  String get setting => 'Setting';
+  String get settingsAccountDetails => 'Account details';
 
   @override
-  String get general => 'General';
+  String get settingsLanguage => 'Language';
 
   @override
-  String get accountDetails => 'Account details';
+  String get settingsTheme => 'Theme';
 
   @override
-  String get theme => 'Theme';
+  String get settingsInformationSection => 'Information';
 
   @override
-  String get language => 'Language';
+  String get settingsRateUs => 'Rate us';
 
   @override
-  String get info => 'Info';
+  String get settingsPrivacyPolicy => 'Privacy policy';
 
   @override
-  String get rateMyApp => 'Rate my app';
+  String get settingsTermsAndConditions => 'Terms and conditions';
 
   @override
-  String get privacyPolicyOption => 'Privacy policy';
+  String get settingsVersion => 'Version';
 
   @override
-  String get termsOfServiceOption => 'Terms of Service';
+  String get settingsOtherSection => 'Other';
 
   @override
-  String get contract => 'Contract';
+  String get settingsLogout => 'Logout';
 
   @override
-  String get version => 'Version';
+  String get settingsDeleteAccount => 'Delete account';
 
   @override
-  String get versionInfo => '1.0.1 (17)';
+  String get themeScreenTitle => 'Theme';
 
   @override
-  String get accountDetail => 'Account Detail';
+  String get systemDefaultLabel => 'System Default';
 
   @override
-  String get updateDetails => 'Update Details';
+  String get lightModeLabel => 'Light Mode';
 
   @override
-  String get updateProfileMessage => 'Update your name, email, and phone number to keep your profile up-to-date and continue using the app.';
+  String get darkModeLabel => 'Dark Mode';
 
   @override
-  String get update => 'Update';
+  String get accountDetailsScreenTitle => 'Account Details';
 
   @override
-  String get nameCannotBeEmpty => 'Name can not be empty';
+  String get saveButtonLabel => 'Save';
 
   @override
-  String get nameTooShort => 'Name must be greater than 3 characters';
+  String get homeScreenTitle => 'Home';
 
   @override
-  String get emailCannotBeEmpty => 'Email can not be empty';
-
-  @override
-  String get invalidEmail => 'Please enter a valid email address';
-
-  @override
-  String get phoneNumberCannotBeEmpty => 'Phone Number can not be empty';
-
-  @override
-  String get phoneNumberLengthError => 'Phone Number must be greater than 8 and less than 15';
-
-  @override
-  String get agreeToTerms => 'By purchasing, you agree to our';
-
-  @override
-  String get termsOfServices => 'Terms of Services';
-
-  @override
-  String get and => 'and';
-
-  @override
-  String get home => 'Home';
-
-  @override
-  String get privacyPolicyEnd => 'Privacy Policy.';
-
-  @override
-  String get nameValidationEmpty => 'Name can not be empty';
-
-  @override
-  String get nameValidationLength => 'Name must be greater than 3 characters';
-
-  @override
-  String get emailValidationEmpty => 'Email can not be empty';
-
-  @override
-  String get emailValidationInvalid => 'Please enter a valid email address';
-
-  @override
-  String get phoneNumberValidationEmpty => 'Phone Number can not be empty';
-
-  @override
-  String get phoneNumberValidationLength => 'Phone Number must be greater than 8 and less than 15 characters';
-
-  @override
-  String get light => 'Light';
-
-  @override
-  String get dark => 'Dark';
-
-  @override
-  String get system => 'System';
-
-  @override
-  String get deleteMyAccount => 'Delete My Account';
-
-  @override
-  String get logout => 'Logout';
-
-  @override
-  String get buttonPressCount => 'You have pushed the button this many times:';
+  String get homeScreenLabel => 'Home Screen';
 }
